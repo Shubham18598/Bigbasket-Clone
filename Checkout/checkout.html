@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=PT+Sans&family=Poppins&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            
+        }
+      #navbar{
+        padding-left: 18%;
+        padding-right: 20%;
+        
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid #e3e3e3;
+         
+      }
+      #navbar>img{
+        width: 17%;
+      }
+      #navbar p{
+        color: #979797;
+        font-weight: bold;
+        padding-top: 30px;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 18px;
+      }
+      #main{
+        display: flex;
+        padding-top: 20px;
+        padding-left: 18.5%;
+        padding-right: 20%;
+      }
+      #address{
+        border: 1px solid #979797;
+        
+        width: 80%;
+        height: 500px;
+        padding: 0px 15px;
+        
+      }
+      #apply_order{
+        
+        padding: 0px 15px;
+        width: 30%;
+        height: 500px;
+        border: none;
+      }
+      h3{
+        color: #666666;
+        font-family: 'PT Sans', sans-serif;
+        margin: 0px;
+      }
+      #voucher{
+        
+        margin-top: 5px;
+        height: auto;
+        padding: 15px;
+        background-color: #F7F7F7;
+        margin-bottom: 10px;
+      }
+      #voucher>#entry{
+        display: flex;
+      }
+      #voucher>#entry>input{
+        height: 20px;
+        padding: 6px 12px 4px;
+        border:1px solid #e3e3e3;
+      }
+      #voucher>#entry>div{
+        height: 32px;
+        border: 1px solid #e3e3e3;
+        width: 28%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4A4A4A;
+        font-weight: bold;
+        font-family: 'PT Sans', sans-serif;
+      }
+      #pop{
+        border: 1px solid #E8F1FC;
+        margin-top: 10px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #E8F1FC;
+        font-family: 'PT Sans', sans-serif;
+        text-decoration: underline;
+        color: #1973E7;
+        font-size: 15px;
+      }
+      #order{
+        padding: 15px;
+        height: auto;
+        margin-top: 5px;
+        background-color: #F7F7F7;
+        
+      }
+      #box1,#box2{
+        padding:5px 10px;
+        border: 1px solid #E3E3E3;
+        background-color: white;
+      }
+      #box1>div{
+        display: flex;
+        justify-content: space-between;
+      }
+     #box2>div{
+        display: flex;
+        justify-content: space-between;
+     }
+      #box1>div>p{
+        margin: 0px;
+        padding: 0px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      #box1>#free{
+        margin-top: 10px;
+      }
+      #box1>#free>p:last-child{
+        color: green;
+      }
+      
+      #box2>div>p{
+        font-weight: bold;
+        font-family: 'PT Sans', sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+       <img src="./Checkout images/logo.jpg" alt="">
+       <p>1860 123 1000</p>
+    </div>
+    <div id="main">
+    <div id="address">
+       <!-- delivery address -->
+    </div>
+    <div id="apply_order">
+        <h3>Apply Voucher</h3>
+        <div id="voucher">
+            <div id="entry">
+            <input placeholder="Enter voucher code">
+            <div>Apply</div>
+            </div>
+            <div id="pop"><a>10 vouchers available</a></div>
+        </div>
+        <h3>Order Summary</h3>
+        <div id="order">
+            <div id="box1">
+                <div>
+                    <p>Basket Value</p>
+                    <p>Rs 33</p>
+                </div>
+                <div id="free">
+                    <p>Delivery Charge</p>
+                    <p>FREE</p>
+                </div>
+            </div>
+            <div id="box2">
+                <div>
+                <p>Total Amount Payable</p>
+                <p>Rs 33</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    </div>
+</body>
+</html>

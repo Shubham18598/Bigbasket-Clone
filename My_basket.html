@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: rgba(143, 134, 134, 0.164);
+    }
+    #basket_line{
+    font:24px "Roboto Slab",serif;
+    color: #6f7174;
+    border-bottom: 1px solid  rgba(143, 134, 134, 0.164);
+    padding-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    /* color: #6D6E71; */
+    /* font-size:26px; */
+    /* font-weight: lighter */
+
+    
+    
+    }
+    #main{
+        width:70%;
+        height: 100%;
+        margin-left: 15%;
+        margin-right: 15%;
+        background-color: white
+    }
+    #icon{
+        width: 3%;
+        height: 5%;
+    }
+    #promo-button p{
+        color: #6D6E71;
+        font: 12px Lato,sans-serif;
+    }
+    #promo-button button{
+        height: 5%;
+        width: 20%;
+        margin-top: 2%;
+        padding-bottom: 33px;
+        background: linear-gradient(180deg,#fff 35%,#ebedea 99%);
+        border: 1px solid orange;
+        border-radius: 5px;
+        margin-left: 2%;
+        cursor: pointer;
+        display: inline-block;
+    }
+    /* #promo-button button:hover{
+        background-color: linear-gradient(180deg,#fff 35%,#ebedea 99%);
+    } */
+    #list-items{
+        display: flex;
+        justify-content: space-between;
+        background-color: #555;
+        color: white;
+        margin-top: 3%;
+        height: 8%;
+        font:  Roboto Slab,serif;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #a{
+        margin-right: 20%;
+        margin-left: 2%;
+    }
+    #b{
+        /* margin-left: 12%; */
+        background-color: #c6cc74;
+        width: 10%;
+        padding-left: 1%;
+        /* padding-right: 5%; */
+    }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="basket_line">
+        <p>Your Basket (" ")</p>
+        
+    </div>
+    <div id="promo-button">
+        <button>
+            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Eo_circle_orange_white_letter-p.svg/1200px-Eo_circle_orange_white_letter-p.svg.png" alt="" id="icon"> -->
+            <p>VIEW AVAILABLE PROMO</p> 
+        </button>
+    </div>
+    <div id="list-items">
+        <h5 id="a">ITEMS DESCRIPTION</h5>
+        <h5>UNIT PRICE</h5>
+        <h5>QUANTITY</h5>
+        <h5>SUBTOTAL</h5>
+        <div id="b">
+            <h5 >SAVINGS</h5>
+        </div>
+        
+
+    </div>
+</div>
+</body>
+</html>

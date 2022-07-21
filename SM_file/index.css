@@ -9,16 +9,16 @@
 #middle{
     width: 100%;
     height: auto;
-    border: 1px solid rgb(43, 111, 221);
+    /* border: 1px solid rgb(43, 111, 221); */
 }
 #ca{
     height:auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #box{
     width: 60%;
-    border: 1px solid rgb(24, 227, 95);
+    /* border: 1px solid rgb(24, 227, 95); */
     margin: auto;
 }
 #box1{
@@ -26,11 +26,13 @@
     display: grid;
     grid-template-columns: repeat(6,1fr);
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    gap: 5px;
 }
  
 .inBox>img{
     width: 100%;
+    cursor: pointer;
 }
 #basket,#sellers{
     width: 100%;
@@ -42,18 +44,75 @@
     position: relative;
     padding-left: 70px;
 }
-#bask-head>button, #sellers-head>button{
-    height: 20px;
+#bask-head>div>button, #sellers-head>div>button{
+    height: 25px;
     position: absolute;
-    right: 20%;
+    right: -1%;
+    border-radius: 5px;
+            background-color: rgb(49, 207, 49);
+            color: white;
 }
 .b{
     margin: auto;  
+    margin-top: 25px; 
+    margin-bottom: -15px;
 }
 #basket-main, #sellers-main{
     width: 100%;
-    height: 300px;
-    border: 1px solid red;
+    height: auto;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    cursor: pointer;
+}
+
+
+#bank,#offers,#veg, #staples,#drinks ,#snacks ,#clean,#beauty,#kitchen,#brand-s{
+    width: 100%;
+}
+#bank-head, #offers-head , #veg-head,#staples-head,#drinks-head,#snacks-head,#clean-head,#beauty-head,#kitchen-head,#brand-s-head{
+    display: flex;
+    align-items: center;
+}
+#bank-main, #offers-main ,#snacks-main ,#clean-main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 1px solid red; */
+    gap: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#bank-main>div>img, #offers-main>div>img, #staples-main>div>img,#snacks-main>div>img ,#clean-main>div>img, #kitchen-main>div>img,#brand-s-main>div>img{
+    width: 100%;
+    border: 1px solid rgb(222, 221, 221);
+}
+
+
+#veg-main,#drinks-main,#beauty-main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* border: 1px solid red; */
+    gap: 7px;
+    cursor: pointer;
+}
+#veg-main-in,#drinks-main-in,#beauty-main-in{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+    gap: 7px;
+}
+#veg-main>div>img , #veg-main-in>div>img,#drinks-main>div>img, #drinks-main-in>div>img,#beauty-main>div>img,#beauty-main-in>div>img{
+    width: 100%;
+    border: 1px solid rgb(222, 221, 221);
+    height: 100%;
+}
+#staples-main,#kitchen-main,#brand-s-main{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 7px;
+    cursor: pointer;
 }
 
 .carousel-inner>img {
@@ -63,8 +122,106 @@ height: 100%;
 #demo{
 height: 100%;
 width: 100%;
+cursor: pointer;
 }
 #abc{
-border: 1px solid red;
+/* border: 1px solid red; */
 width: 100%;
+}
+
+.hov:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+
+
+
+
+
+
+  #vegi-box{
+    border: 1px solid rgb(222, 221, 221);
+    height:auto;
+    /* padding-left: 15px; */
+    cursor: pointer;
+   }
+   #vegi-box:hover{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.disprice{
+    border: 1px solid rgb(222, 221, 221);
+    width: 80%;
+    margin: auto;
+  
+}
+
+
+#img-box{
+    width: 75%;
+    /* border: 1px solid rgb(237, 41, 41); */
+    /* margin-left: 10px; */
+    height: 40%;
+    margin: auto;
+} 
+.imge{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.name{
+    margin-top: -15px;
+    font-size: small;
+    color: black;
+    margin-left: 25px;
+}
+.kg{
+    border: 1px solid rgb(52, 46, 46);
+    width: 80%;
+    margin: auto;
+}
+#midbox{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid rgb(237, 41, 41); */
+    background-color: rgb(220, 217, 217);
+    font-size: small;
+    margin: auto;
+
+}
+.mrpprice{
+    display: flex;
+
+}
+.qtydiv{
+    display: flex;
+}
+.input{
+    width: 30px;
+    height: 20px;
+}
+.qtydiv,.delinfo{
+    margin-top: -15px;
+}
+.brand{
+    font-size:smaller;
+    color: gray;
+    margin-left: 25px;
+}
+.pr{
+    text-decoration: line-through;
+}
+.disprice{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.addbut{
+    width: 40px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: rgb(224, 234, 39);
+    border-radius: 5px;
+
+}
+.addbut:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 0);
 }

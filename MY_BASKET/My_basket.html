@@ -15,12 +15,6 @@
     padding-top: 1%;
     margin-left: 2%;
     margin-right: 2%;
-    /* color: #6D6E71; */
-    /* font-size:26px; */
-    /* font-weight: lighter */
-
-    
-    
     }
     #main{
         width:70%;
@@ -49,31 +43,39 @@
         cursor: pointer;
         display: inline-block;
     }
-    /* #promo-button button:hover{
-        background-color: linear-gradient(180deg,#fff 35%,#ebedea 99%);
-    } */
-    #list-items{
-        display: flex;
-        justify-content: space-between;
-        background-color: #555;
-        color: white;
-        margin-top: 3%;
-        height: 8%;
-        font:  Roboto Slab,serif;
-        margin-left: 2%;
-        margin-right: 2%;
+   
+    table {
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
     }
-    #a{
-        margin-right: 20%;
-        margin-left: 2%;
+    table td,
+    table th {
+    padding: 8px;
+    text-align: center;
+    
     }
-    #b{
-        /* margin-left: 12%; */
-        background-color: #c6cc74;
-        width: 10%;
-        padding-left: 1%;
-        /* padding-right: 5%; */
+
+    table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font: Roboto Slab,serif;
     }
+    tr{
+        
+        border-bottom: 1px solid  rgba(143, 134, 134, 0.164);
+       
+        
+    }
+
+   
     </style>
 </head>
 <body>
@@ -84,21 +86,25 @@
     </div>
     <div id="promo-button">
         <button>
-            <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Eo_circle_orange_white_letter-p.svg/1200px-Eo_circle_orange_white_letter-p.svg.png" alt="" id="icon"> -->
             <p>VIEW AVAILABLE PROMO</p> 
         </button>
     </div>
-    <div id="list-items">
-        <h5 id="a">ITEMS DESCRIPTION</h5>
-        <h5>UNIT PRICE</h5>
-        <h5>QUANTITY</h5>
-        <h5>SUBTOTAL</h5>
-        <div id="b">
-            <h5 >SAVINGS</h5>
-        </div>
-        
-
-    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ITEMS DESCRIPTION</th>
+                    <th>UNIT PRICE</th>
+                    <th>QUANTITY</th>
+                    <th>SUBTOTAL</th>
+                    <th style="background: #c6cc74">SAVINGS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- For appending basket items -->
+            </tbody>
+        </table>
 </div>
+
 </body>
 </html>
+<script src="My_basket.js"></script>

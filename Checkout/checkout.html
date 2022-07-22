@@ -9,19 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=PT+Sans&family=Poppins&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
     <style>
-        body{
-            
-        }
+       
       #navbar{
         padding-left: 18%;
         padding-right: 20%;
-        
         display: flex;
         justify-content: space-between;
         padding-bottom: 20px;
         border: none;
         border-bottom: 1px solid #e3e3e3;
-         
       }
       #navbar>img{
         width: 17%;
@@ -33,19 +29,23 @@
         font-family: 'PT Sans', sans-serif;
         font-size: 18px;
       }
+     #panel{
+        padding-left: 18.5%;
+        padding-right: 20%;
+       
+     }
       #main{
         display: flex;
         padding-top: 20px;
-        padding-left: 18.5%;
-        padding-right: 20%;
+        margin-bottom: 10px;
       }
       #address{
         border: 1px solid #979797;
         
         width: 80%;
-        height: 500px;
-        padding: 0px 15px;
-        
+        height: auto;
+        padding: 15px 15px;
+        padding-top: 25px;
       }
       #apply_order{
         
@@ -135,17 +135,255 @@
         font-weight: bold;
         font-family: 'PT Sans', sans-serif;
       }
+      #deliver{
+        display: flex;
+        gap: 10px;
+        color: #666666;
+        font-weight: bold;
+        font-size: 19px;
+        margin-bottom: 30px;
+      }
+      #add_body{
+        background-color:#F7F7F7;
+        height: auto;
+        padding: 13px 15px;
+        color: #666666;
+      }
+      #bag1,#bag2{
+        display: flex;
+        
+      }
+      #bag1>div{
+        width: 25%;
+        gap: 20px;
+      }
+      #bag1>div>input{
+        height: 25px;
+        margin-top: -10px;
+        border:1px solid #C8C8C8;
+      }
+      #bag1>div:last-child{
+        width: 49%;
+      }
+      #bag1>div:last-child>input{
+        width: 98%;
+      }
+      span{
+        color: red;
+      }
+      #bag2>div{
+        width: 25%;
+        gap: 20px;
+      }
+      #bag2>div:last-child{
+         width: 90%;
+         margin-left: 20px;
+      }
+      #bag2>div>input{
+        height: 25px;
+        margin-top: -10px;
+        border:1px solid #C8C8C8;
+      }
+      #bag2>div:last-child>input{
+         width: 98.7%;
+      }
+      #bag3,#bag4{
+        display: flex;
+        gap: 20px;
+      }
+      #bag3>div{
+        width: 55%;
+      }
+      #bag3>div>input{
+        height: 25px;
+        width: 98%;
+        border:1px solid #C8C8C8;
+      }
+      #bag4>div>select{
+        height: 31px;
+        width: 100%;
+        margin-top: -10px;
+        border:1px solid #C8C8C8;
+        color: #666666;
+      }
+      #bag4>div{
+        width: 23%;
+      }
+      #bag4>div:nth-child(2)
+      {
+        width: 48%;
+      }
+      #bag4>div:nth-child(2)>input
+      {
+        width: 98%;
+        height: 25px;
+        margin-top: -10px;
+        border:1px solid #C8C8C8;
+      }
+      #bag4>div:nth-child(3)>input
+      {
+        width: 95.5%;
+        height: 25px;
+        margin-top: -10px;
+        border:1px solid #C8C8C8;
+      }
+      #bag5>div{
+        display: flex;
+        margin-top: -10px;
+        margin-bottom: 5px;
+        gap: 10px;
+      }
+      #bag5>div>div{
+        border: 1px solid #979797;
+        background-color: white;
+        padding: 5px 10px;
+        font-family: sans-serif;
+        font-size: 10px;
+        border-radius: 5px;
+      }
+      #bag5>button{
+        padding: 10px 10px;
+        color: white;
+        background-color: #666666;
+        border: none;
+        margin-bottom: 20px;
+      }
+      #gift,#deliveryOpt,#payOpt{
+        border: 1px solid #979797;
+        width: 68.8%;
+        margin-bottom: 10px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #C8C8C8;
+        padding: 15px;
+      }
+      #gift>div{
+        display: flex;
+        
+      }
+      #deliveryOpt>div{
+        display: flex;
+        
+      }
+      #payOpt>div{
+        display: flex;
+        
+      }
+      #gift>div>div{
+        padding-top: 5px;
+        font-size: 18px;
+      }
+      #deliveryOpt>div>div{
+        padding-top: 5px;
+        font-size: 18px;
+      }
+      #payOpt>div>div{
+        padding-top: 1px;
+        font-size: 18px;
+      }
+      #gift>div:last-child{
+        color: #666666;
+        border: 1px solid #666666;
+        padding: 5px 20px;
+        font-size: 15px;
+      }
     </style>
 </head>
 <body>
     <div id="navbar">
-       <img src="./Checkout images/logo.jpg" alt="">
+       <img src="../Checkout/Checkout images/logo.jpg" alt="">
        <p>1860 123 1000</p>
     </div>
+    
+    <div id="panel">
     <div id="main">
     <div id="address">
        <!-- delivery address -->
-    </div>
+       <div id="deliver">
+       <img src="../Checkout/Checkout images/deliverypoint.jpg" alt="">
+       <div>Delivery Address</div>
+       </div>
+       <div id="add_body">
+        <p>Personal Details</p>
+        <div id="bag1">
+          <div>
+            <p><span>*</span>Enter first name</p>
+            <input>
+          </div>
+          <div>
+            <p><span>*</span>Enter last name</p>
+            <input>
+          </div>
+          <div>
+            <p><span>*</span>Enter contact number</p>
+            <input>
+          </div>
+        </div>
+        <p>Address Details</p>
+        <div id="bag2">
+          <div>
+            <p><span>*</span>House No</p>
+            <input>
+          </div>
+          <div>
+            <p>Enter appartment name</p>
+            <input>
+          </div>
+        </div>
+        <div id="bag3">
+          <div>
+            <p>Enter street details</p>
+            <input>
+          </div>
+          <div>
+            <p>Enter landmark for easy reach out</p>
+            <input>
+          </div>
+          
+        </div>
+        <div id="bag4">
+          <div>
+            <p>Enter city name</p>
+            <select>
+              <option value="">Bangalore</option>
+              <option value="">Delhi</option>
+              <option value="">Mumbai</option>
+              <option value="">Chennai</option>
+              <option value="">Hyderabad</option>
+              <option value="">Pune</option>
+              <option value="">Vishakhapatnam</option>
+              <option value="">Howrah</option>
+              <option value="">Patna</option>
+              <option value="">Lucknow</option>
+            </select>
+          </div>
+          <div>
+            <p><span>*</span>Area details</p>
+            <input type="number">
+          </div>
+          <div>
+            <p><span>*</span>Enter Pincode</p>
+            <input type="number">
+          </div>
+        </div>
+        <div id="bag5">
+          
+            <p>Choose nick name for this address</p>
+            <div>
+               <div>HOME</div>
+               <div>OFFICE</div>
+               <div>OTHER</div>
+            </div>
+          <button>ADD ADDRESS</button>
+          
+        </div>
+        
+        </div>
+        
+       </div>
+      
     <div id="apply_order">
         <h3>Apply Voucher</h3>
         <div id="voucher">
@@ -160,7 +398,7 @@
             <div id="box1">
                 <div>
                     <p>Basket Value</p>
-                    <p>Rs 33</p>
+                    <p id="cost"></p>
                 </div>
                 <div id="free">
                     <p>Delivery Charge</p>
@@ -170,13 +408,254 @@
             <div id="box2">
                 <div>
                 <p>Total Amount Payable</p>
-                <p>Rs 33</p>
+                <p id="totalcost"></p>
                 </div>
             </div>
+            
 
         </div>
     </div>
     
     </div>
+    <div id="gift"> 
+      <div>
+      <img src="../Checkout/Checkout images/gift.jpg" alt="">
+      <div>Is this a gift order?</div>
+      </div>
+      <div>
+        ADD MESSAGE
+      </div>
+    </div>
+    <div id="deliveryOpt">
+      <div>
+        <img src="../Checkout/Checkout images/deliver.jpg" alt="">
+        <div>Delivery Options</div>
+        </div>
+    </div>
+    <div id="payOpt">
+      <div>
+        <img src="../Checkout/Checkout images/pay.jpg" alt="">
+        <div>Payment Options</div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
+<script>
+  
+     var fruits_vegArr = [
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Onion",
+      kg: "1kg",
+      price: "60",
+      mrp: 38.38,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Ladies Finger",
+      kg: "500g",
+      price: "23.19",
+      mrp: 19,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "CauliFlower",
+      kg: "1 pc (approx. 400 to 600 g)",
+      price: "23.19",
+      mrp: 19,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000283_11-fresho-green-peas.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Green Peas",
+      kg: "500g",
+      price: "42.50",
+      mrp: 34,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/40057966_2-fresho-tender-coconut-medium.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Tender Coconut - Medium",
+      kg: "1pc",
+      price: "38.75",
+      mrp: 31,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000103_16-fresho-cucumber.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Cucumber",
+      kg: "500g",
+      price: "17.15",
+      mrp: 14,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/40048457_7-fresho-potato-new-crop.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Potato - New Crop",
+      kg: "1kg",
+      price: "33.75",
+      mrp: 27,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Capsicum - Green",
+      kg: "500g",
+      price: "52.50",
+      mrp: 42,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000263_11-fresho-strawberry.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Strawberry",
+      kg: "200g",
+      price: "60",
+      mrp: 48,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/40134281_11-fresho-baby-apple-shimla.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Baby Apple Shimla",
+      kg: "1 kg (Approx. 11-12 pcs)",
+      price: "215",
+      mrp: 172,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000066_25-fresho-cabbage.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Cabbage",
+      kg: "1 pc (approx. 500 g to 800 g)",
+      price: "17.50",
+      mrp: 12.12,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000127_17-fresho-lemon.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Lemon",
+      kg: "250g",
+      price: "22.50",
+      mrp: 18,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000269_30-fresho-pomegranate.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Pomegranate",
+      kg: "4 pcs (approx. 800 - 880 g)",
+      price: "281.25",
+      mrp: 161,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/s/10000054_17-fresho-brinjal-bottle-shape.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Brinjal - Bottle Shape",
+      kg: "500g",
+      price: "21.25",
+      mrp: 17,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/mm/40023474_7-fresho-banana-yelakki-organically-grown.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Banana - Yelakki, Organically Grown",
+      kg: "500g",
+      price: "50",
+      mrp: 40,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/mm/40004992_14-fresho-sweet-corn.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Sweet Corn",
+      kg: "2 pc",
+      price: "46",
+      mrp: 36,
+      brand:"Fresho"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/mm/1203204_2-bb-combo-gajar-halwa.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Gajar Halwa",
+      kg: "Combo 2 Items",
+      price: "154",
+      mrp: 128.55,
+      brand:"bb Combo"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/mm/1202745_1-bb-combo-pineapple-and-pomegranate-cut.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Pineapple and Pomegranate Cut",
+      kg: "Combo 2 Items",
+      price: "237.50",
+      mrp: 182,
+      brand:"bb Combo"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/mm/1203204_2-bb-combo-gajar-halwa.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Gajar Halwa",
+      kg: "Combo 2 Items",
+      price: "154",
+      mrp: 128.55,
+      brand:"bb Combo"
+    },
+    {
+      imageUrl:
+        "https://www.bigbasket.com/media/uploads/p/mm/1202745_1-bb-combo-pineapple-and-pomegranate-cut.jpg",
+      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
+      name: "Pineapple and Pomegranate Cut",
+      kg: "Combo 2 Items",
+      price: "237.50",
+      mrp: 182,
+      brand:"bb Combo"
+    }
+
+];
+  localStorage.setItem("items",JSON.stringify(fruits_vegArr));
+  findTotal(fruits_vegArr)
+  function findTotal(data)
+  {
+    let sum=0;
+    data.forEach((ele)=>{
+      sum+=Number(ele.price);
+    })
+    document.getElementById("cost").innerText="Rs"+sum;
+    document.getElementById("totalcost").innerText="Rs"+sum;
+  }
+  
+</script>

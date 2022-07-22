@@ -1,0 +1,198 @@
+body{
+    padding:0px;
+    margin:0px;
+
+}
+
+#centerImg>img{
+
+    margin-left: 9%;
+
+
+}
+
+#vegcontainer{
+    display:flex;
+    margin-left: 10%;
+    margin-top: 3%;;
+}
+#sidebox{
+    margin-top:2%;
+
+}
+#brandcheckbox{
+    display: flex;
+   
+}
+#trucklogo{
+    display:flex;
+}
+#trucklogo>img{
+    width:30px;
+}
+#mediumdiv{
+    display: flex;
+    justify-content: space-between;
+}
+#mediumdiv>div>p{
+    font-size: 26px;
+  color:grey;
+    font-family:inherit;
+    padding-left: 15px;
+}
+
+
+
+
+#brandsearch>img{
+    width:10px;
+}
+
+#category{
+    width:250px;
+    height:250px;
+    /* border: 1px solid red; */
+}
+#category>p{
+    color:grey;
+    padding-left: 8px;
+    margin-top: -10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+#mainbrand{
+width:250px;
+height:250px;
+}
+#search{
+    width:180px;
+   margin-top: -2px;
+}
+#brandcheckbox{
+    margin-top: -15px;
+  
+}
+#h1{
+    color:green;
+    font-size: medium;
+}
+#slidingimg{
+    padding-left:9%;
+
+}
+#sorting{
+    border-radius: none;
+    background-color: white;
+    color:grey;
+    width:220px;
+    padding:6px;
+    margin-top:20px;
+}
+#container{
+    width:900px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(auto,auto);
+    gap:4px;
+    row-gap: 50px;
+    
+}
+#box{
+    width:200px;
+    height:400px;
+    padding:12px;
+    
+}
+#box:hover{
+    box-shadow:rgba(141, 138, 138, 0.24) 0px 3px 8px;;
+}
+.disprice{
+    width:100px;
+    box-shadow: rgba(141, 138, 138, 0.24) 0px 3px 8px;
+    padding-left: 80px;
+    font-size: 14px;
+    color: red;
+    
+}
+.mrpprice{
+    display:flex;
+    gap:4px;
+        padding-left: 10px;
+}
+.pr{
+    text-decoration: line-through;
+    color: grey;
+    font-size: 12px;
+}
+.price{
+    font-size: 12px;
+    
+    
+}
+.qtydiv{
+    display: flex;
+    margin-top: -20px;
+    padding-left: 12px;
+}
+input{
+   width:38px;
+   height: 15px;
+   border-radius: 2px;
+   margin-top: 16px;
+}
+
+#midbox{
+  
+    background-color: rgb(244, 243, 243);
+    height:100px;
+    margin-left: 12px;
+}
+.brand{
+    color:grey;
+    margin-bottom:-12px ;
+    padding-left: 12px;
+}
+.name{
+    padding-left: 12px;
+
+}
+.kg{
+    padding-left: 12px;
+}
+
+.delinfo{
+    font-size: 12px;
+    padding-left: 60px;
+    margin-top: -10px;
+    
+    color: #333;
+    font-family: ProximaNovaA-Regular;
+    
+    line-height: 15px;
+}
+.mrp{
+    color:grey;
+    font-size: 12px;
+}
+.imge{
+    padding-left: 30px;
+    padding-top: 2px;
+}
+#vertical-line{
+    width:1px;
+    height:auto;
+}
+.bbcombo{
+    margin-top: -3px;
+}
+#addcart{
+ 
+    border: 1px solid #fee67c;
+    background-color: #fee67c;
+    width:80px;
+    height:30px;
+    margin-top: 7%;
+    border-radius: 8px;
+    cursor: pointer;
+}

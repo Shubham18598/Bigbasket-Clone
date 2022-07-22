@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <style>
+        #navbar{
+            height: auto;
+            border: 1px solid red;
+        }
+        #down{
+            display: flex;
+            
+            height: auto;
+            width: 62%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        #sidebar{
+            border: 1px solid grey;
+            width: 27%;
+        }
+        #main{
+            width: 73%;
+        }
+        #profile{
+            
+            margin-left: 45px;
+            width: 80%;
+            height: 700px;
+            padding-top: 25px;
+        }
+        #profile>div{
+            height: 45px;
+            width: 55%;
+            border: 1px solid grey;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #8F8F8F;
+
+        }
+        #mail{
+            margin-left: 0px;
+        }
+        label{
+            color: #666666;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <hr width="62%">
+    <div id="down">
+        
+        <div id="sidebar"></div>
+        <div id="main">
+            <div id="profile">
+               <div>
+                <div id="a1">Name:</div>
+                <div><img src="./Account images/pencilIcon.jpg" alt=""></div>
+               </div>
+               <div>
+                <div id="a1">Mobile Number:</div>
+                <div><img src="./Account images/pencilIcon.jpg" alt=""></div>
+               </div>
+               <div>
+                <div id="a1">Email:</div>
+                <div><img src="./Account images/pencilIcon.jpg" alt=""></div>
+               </div>
+               <input type="checkbox" id="mail">
+               <label for="mail">Send me mails on promotions, offers and services</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

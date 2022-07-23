@@ -1,0 +1,84 @@
+
+#inner{
+    width:300px;
+    height:425px;
+    margin:auto;
+    text-align:center;
+    font-family:Roboto,sans-serif;
+    /* border:1px solid black; */
+    border-radius: 20px;
+    padding-top: 20px;
+ margin-top: 90px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#logo {
+ width: 60%;
+ height: 15%;
+ margin: auto;
+ margin-top: 20px;
+}
+img {
+ object-fit: contain;
+ height: 100%;
+ width: 100%;
+ /* border: 1px solid red; */
+}
+#head {
+ margin-top: 10px;
+ /* border: 1px solid red; */
+}
+h3 {
+ margin-top: 30px;
+ color: #84c225;
+ /* border: 1px solid red; */
+ display: block;
+}
+#email{
+    width:70%;
+    height:25px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid  #90d12e;
+}
+#password{
+    width:70%;
+    height:25px;
+    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid   #90d12e;
+}
+#two{
+    margin-top: 50px;
+    text-align:center;
+    width:80%;
+    height:40px;
+    border-radius: 5px;
+    background-color: #90d12e;
+    color:white;
+    border:none;
+    font-weight: light-bold;
+    font-size: 15px;
+}
+
+p {
+ font-size:9px;
+ position: relative;
+ font-weight: lighter;
+ color: #333333;
+ font-family: sans-serif;
+ line-height: 15px;
+}
+a {
+ color: royalblue;
+ font-weight: bold;
+ text-decoration: none;
+}
+
+span {
+ font-size: 16px;
+ margin-top: 50px;
+ color: gray;
+}
+#signupLink{
+ font-size: 14px;
+}

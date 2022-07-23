@@ -466,7 +466,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
 <script>
-let cartArr=JSON.parse(localStorage.getItem("homedata"))||[];
+let cartArr=JSON.parse(localStorage.getItem("cartItems"))||[];
 
 document.getElementById("totalI").innerText=cartArr.length;
 let totalP=0;
@@ -487,7 +487,7 @@ cartArr.forEach((el)=>{
       }).then(function (){
         location.href = "../MY_BASKET/My_orders.html";
       });
-      localStorage.setItem("homedata",JSON.stringify([]));
+      localStorage.setItem("cartItems",JSON.stringify([]));
     }
 
     addAddress=()=>{

@@ -4,7 +4,9 @@ body{
 
 }
 
-
+#afterLogin>.login>i {
+    margin-top: 15px;
+}
 #centerImg>img{
 
     margin-left: 9%;

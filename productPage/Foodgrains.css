@@ -3,6 +3,9 @@ body{
     margin:0px;
 
 }
+#afterLogin>.login>i {
+    margin-top: 15px;
+}
 #Hometext{
     margin-left: 12%;
 }

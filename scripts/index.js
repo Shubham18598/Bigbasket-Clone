@@ -290,16 +290,28 @@ function addfun(el){
      console.log(el);
      homearr.push(el);
      localStorage.setItem("homedata",JSON.stringify(homearr));
-     alert("product add sucessfully ");
-     window.location.reload();
+     swal({
+      title: "Successfull!",
+      text: "Successfully Product Added to Basket..",
+      icon: "success",
+      button: "Continue",
+    }).then(function (){
+      window.location.reload();
+    }) 
 
 }
 addfunVeg=(el)=>{
   console.log(el);
   homearr.push(el);
   localStorage.setItem("homedata",JSON.stringify(homearr));
-  alert("product add sucessfully ");
-  window.location.reload();
+  swal({
+    title: "Successfull!",
+    text: "Successfully Product Added to Basket..",
+    icon: "success",
+    button: "Continue",
+  }).then(function (){
+    window.location.reload();
+  }) 
 
 }
 

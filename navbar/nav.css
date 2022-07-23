@@ -164,6 +164,9 @@ body{
     margin-top: 5px;
     width: 300px;
 }
+.location-part1>select{
+    width: 325px;
+}
 .location-part1>button{
     border: none;
     outline: none;

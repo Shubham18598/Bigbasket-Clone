@@ -92,17 +92,17 @@ cities.forEach((el)=>{
     document.getElementById("city").append(option);
 })
 
-
 /* sticky header */
-myID = document.getElementById("navbar");
 
 let myScrollFunc = function () {
-    var y = window.scrollY;
-    if (y >= 50) {
-        myID.className = "show"
-    } else {
-        myID.className = "hide"
-    }
+  myID = document.getElementById("navbar");
+  // console.log(myID);
+  var y = window.scrollY;
+  if (y >= 50) {
+      myID.className = "show"
+  } else {
+      myID.className = "hide"
+  }
 };
 
 window.addEventListener("scroll", myScrollFunc);

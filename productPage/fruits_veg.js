@@ -390,9 +390,17 @@ function displayproduct( fruits_vegArr){
   
  
   function addtocart(el){
-    console.log(el)
-    // cartArr.push(el);
-    // localStorage.setItem("cartItems",JSON.stringify(cartArr));
+    console.log(el);
+    cartArr.push(el);
+    localStorage.setItem("cartItems",JSON.stringify(cartArr));
+    swal({
+        title: "Successfully!",
+        text: "Added To Cart",
+        icon: "success",
+        button: "Continue",
+    }).then(function (){
+      window.location.reload();
+    });
    
 
   }

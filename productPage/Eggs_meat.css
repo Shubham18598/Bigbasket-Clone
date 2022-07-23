@@ -207,3 +207,6 @@ input{
     font-size: 13px;
 
 }
+#afterLogin>.login>i {
+    margin-top: 15px;
+}

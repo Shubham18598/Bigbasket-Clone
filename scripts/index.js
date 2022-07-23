@@ -1,4 +1,4 @@
-let homearr=JSON.parse(localStorage.getItem("homedata")) || [];
+let homearr=JSON.parse(localStorage.getItem("cartItems")) || [];
 
 let fruits_vegArr = [
     {
@@ -289,7 +289,7 @@ console.log(homearr)
 function addfun(el){
      console.log(el);
      homearr.push(el);
-     localStorage.setItem("homedata",JSON.stringify(homearr));
+     localStorage.setItem("cartItems",JSON.stringify(homearr));
      swal({
       title: "Successfull!",
       text: "Successfully Product Added to Basket..",
@@ -303,7 +303,7 @@ function addfun(el){
 addfunVeg=(el)=>{
   console.log(el);
   homearr.push(el);
-  localStorage.setItem("homedata",JSON.stringify(homearr));
+  localStorage.setItem("cartItems",JSON.stringify(homearr));
   swal({
     title: "Successfull!",
     text: "Successfully Product Added to Basket..",

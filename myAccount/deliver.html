@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My address</title>
+    <title>Online Grocery Shopping and Online Supermarket in India-bigbasket</title>
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png"
+    type="image/x-icon">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         #navbar{
             height: auto;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         #down{
             display: flex;
@@ -18,7 +23,7 @@
             margin-top: 30px;
         }
         #sidebar{
-            border: 1px solid grey;
+            border-right: 1px solid grey;
             width: 27%;
         }
         #main{
@@ -100,7 +105,7 @@
             font-size: 16px;
         }
         #footer{
-            border: 1px solid black;
+            /* border: 1px solid black; */
             margin-top: 300px;
             height: auto;
         }
@@ -108,17 +113,99 @@
             color: #979797;
             font-weight: thin;
         }
+        #navigation {
+            margin-top: -8px;
+        }
+
+        #afterLogin>.login>i {
+            margin-top: 15px;
+        }
+
+        #a1 {
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+        a:hover{
+            color: #84c225;
+        }
     </style>
 </head>
 <body>
-    <div id="navbar">
-        <!-- import navbar here -->
+    <div id="navigation">
+
     </div>
     <hr width="62%">
     <div id="down">
         
         <div id="sidebar">
             <!-- import sidebar here -->
+            <div id="filter-div">
+                <div id="div-1">
+                    <h4><span>PERSONAL DETAILS</span></h4>
+                </div>
+                <div id="section-1">
+                    <p>
+                        <a href="edit.html">Edit Profile</a>
+                    </p>
+                    <p>
+                        <a href="deliver.html">Delivery Addresses</a>
+                    </p>
+                    <p>
+                        <a href="email.html">Email Addresses</a>
+                    </p>
+                </div>
+                <div id="div-2">
+                    <h4><span>SHOP FROM</span></h4>
+                </div>
+                <div id="section-2">
+                    <p>
+                        <a>Smart Basket</a>
+                    </p>
+                    <p>
+                        <a>Shopping List</a>
+                    </p>
+                    <p>
+                        <a>Past Order</a>
+                    </p>
+                </div>
+                <div id="div-3">
+                    <h4><span>MY ACCOUNT</span></h4>
+                </div>
+                <div id="section-3">
+                    <p>
+                        <a>Customer Service</a>
+                    </p>
+                    <p>
+                        <a href="../MY_BASKET/My_orders.html">My Orders</a>
+                    </p>
+                    <p>
+                        <a>My Wallet</a>
+                    </p>
+                    <p>
+                        <a>My Gift Cards</a>
+                    </p>
+                    <p>
+                        <a>My Payments</a>
+                    </p>
+                    <p>
+                        <a>Refer & Earn</a>
+                    </p>
+                    <p>
+                        <a>Locate On Map</a>
+                    </p>
+                    <p>
+                        <a>Alert & Notification</a>
+                    </p>
+                    <p>
+                        <a>Spend Trends</a>
+                    </p>
+
+                </div>
+
+            </div>
         </div>
         <div id="main">
             <p id="head">Add Address</p>
@@ -195,7 +282,7 @@
                 </div>
                <input type="checkbox" id="add_default">
                <label for="add_default">Make this as my default delivery address</label>
-               <div id="but">Add address</div>
+               <div id="but" onclick="addAddress()">Add address</div>
             </div>
         </div>
     </div>
@@ -204,3 +291,26 @@
     </div>
 </body>
 </html>
+<script>
+    addAddress=()=>{
+        location.href="../index.html";
+    }
+</script>
+<script type="module" src="../scripts/module.js"></script>
+<script type="module" src="../scripts/foter.js"></script>
+<script src="../scripts/readmore.js"></script>
+<script>
+    /* sticky header */
+
+let myScrollFunc = function () {
+    myID = document.getElementById("navbar");
+    var y = window.scrollY;
+    if (y >= 10) {
+        myID.className = "show"
+    } else {
+        myID.className = "hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+</script>

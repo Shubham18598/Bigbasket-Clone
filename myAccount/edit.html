@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Grocery Shopping and Online Supermarket in India-bigbasket</title>
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #down {
+            display: flex;
+
+            height: auto;
+            width: 62%;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        #sidebar {
+            border-right: 1px solid grey;
+            width: 27%;
+        }
+
+        #main {
+            width: 73%;
+        }
+
+        #profile {
+
+            margin-left: 45px;
+            width: 80%;
+            height: 700px;
+            padding-top: 25px;
+        }
+
+        #profile>div {
+            height: 45px;
+            width: 55%;
+            border: 1px solid grey;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #8F8F8F;
+
+        }
+
+        #mail {
+            margin-left: 0px;
+        }
+
+        label {
+            color: #666666;
+        }
+
+        #filter-div {
+            margin-left: 10%;
+
+            box-sizing: border-box;
+        }
+
+        h4 span {
+            border-bottom: 2px solid #84c225;
+        }
+
+        #filter-div h4 {
+            border-bottom: 1px solid #dfdfdf;
+            /* margin-right: 5%; */
+            color: #222;
+            font-family: 'proxima-nova', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        #filter-div p {
+            color: #979797;
+            font-family: 'proxima-nova', sans-serif;
+            font-size: 14px;
+        }
+
+        #navigation {
+            margin-top: -8px;
+        }
+
+        #afterLogin>.login>i {
+            margin-top: 15px;
+        }
+
+        #a1 {
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+        a:hover{
+            color: #84c225;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navigation">
+
+    </div>
+    <hr width="62%">
+    <div id="down">
+
+        <div id="sidebar">
+            <div id="filter-div">
+                <div id="div-1">
+                    <h4><span>PERSONAL DETAILS</span></h4>
+                </div>
+                <div id="section-1">
+                    <p>
+                        <a href="edit.html">Edit Profile</a>
+                    </p>
+                    <p>
+                        <a href="deliver.html">Delivery Addresses</a>
+                    </p>
+                    <p>
+                        <a href="email.html">Email Addresses</a>
+                    </p>
+                </div>
+                <div id="div-2">
+                    <h4><span>SHOP FROM</span></h4>
+                </div>
+                <div id="section-2">
+                    <p>
+                        <a>Smart Basket</a>
+                    </p>
+                    <p>
+                        <a>Shopping List</a>
+                    </p>
+                    <p>
+                        <a>Past Order</a>
+                    </p>
+                </div>
+                <div id="div-3">
+                    <h4><span>MY ACCOUNT</span></h4>
+                </div>
+                <div id="section-3">
+                    <p>
+                        <a>Customer Service</a>
+                    </p>
+                    <p>
+                        <a href="../MY_BASKET/My_orders.html">My Orders</a>
+                    </p>
+                    <p>
+                        <a>My Wallet</a>
+                    </p>
+                    <p>
+                        <a>My Gift Cards</a>
+                    </p>
+                    <p>
+                        <a>My Payments</a>
+                    </p>
+                    <p>
+                        <a>Refer & Earn</a>
+                    </p>
+                    <p>
+                        <a>Locate On Map</a>
+                    </p>
+                    <p>
+                        <a>Alert & Notification</a>
+                    </p>
+                    <p>
+                        <a>Spend Trends</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="main">
+            <div id="profile">
+                <div>
+                    <div id="a1">
+                        <p>Name: </p>
+                        <p id="name"></p>
+                    </div>
+                    <div><img src="./Account images/pencilIcon.jpg" alt=""></div>
+                </div>
+                <div>
+                    <div id="a1">
+                        <p>Mobile Number: </p>
+                        <p id="mobile"></p>
+                    </div>
+                    <div><img src="./Account images/pencilIcon.jpg" alt=""></div>
+                </div>
+                <div>
+                    <div id="a1">
+                        <p>Email: </p>
+                        <p id="email"></p>
+                    </div>
+                    <div><img src="./Account images/pencilIcon.jpg" alt=""></div>
+                </div>
+                <input type="checkbox" id="mail">
+                <label for="mail">Send me mails on promotions, offers and services</label>
+            </div>
+        </div>
+    </div>
+    <div id="footer"> </div>
+</body>
+
+</html>
+<script>
+    userData = JSON.parse(sessionStorage.getItem("userDetail")) || [];
+    document.getElementById("name").innerText = userData.name;
+    document.getElementById("mobile").innerText = userData.mobile;
+    document.getElementById("email").innerText = userData.email;
+
+</script>
+<script type="module" src="../scripts/module.js"></script>
+<script type="module" src="../scripts/foter.js"></script>
+<script src="../scripts/readmore.js"></script>
+<script>
+    /* sticky header */
+
+    let myScrollFunc = function () {
+        myID = document.getElementById("navbar");
+        var y = window.scrollY;
+        if (y >= 10) {
+            myID.className = "show"
+        } else {
+            myID.className = "hide"
+        }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);
+</script>

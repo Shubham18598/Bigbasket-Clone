@@ -6,18 +6,22 @@ body{
 #navbar{
     padding-top: 5px;
     margin: 0 12%;
+    background-color: white;
+    overflow: hidden;
 }
 #navbar-up{
     /* border: 1px solid red; */
     display: flex;
 }
 .show{
+    background-color: white;
     position: fixed;
     width: 100%;
     margin: 0!important;
     -webkit-box-shadow: 0 8px 6px -6px rgb(193, 193, 193);
     -moz-box-shadow: 0 8px 6px -6px rgb(193, 193, 193);
          box-shadow: 0 8px 6px -6px rgb(193, 193, 193);
+         z-index: 1;
 }
 .show>#navbar-up{
     margin: 0 12%;
@@ -37,12 +41,14 @@ body{
     margin-top: 3px;
     background-color: white;
     box-shadow: 0px 0px 2px 1px gainsboro;
+    z-index: 1;
+    position: absolute;
 }
 .show>#navbar-up>#part2>.part2-down{
-    margin-top: 15px;
+    margin-top: 5px;
 }
 .show>#navbar-up>#part2>.part2-down>.part2-d-left{
-    margin-top: 12px;
+    margin-top: 10px;
 }
 #part1{
     width: 20%;
@@ -71,12 +77,13 @@ body{
     line-height: 1.5;
     font-weight: 500;
     font-size: 14px;
+    margin-top: 12px;
 }
 #small>.sm>p>i{
     padding-left: 5px;
 }
 #part2{
-    margin-top: -19px!important;
+    margin-top: -10px!important;
     width: 80%;
     /* border: 1px solid red; */
 }
@@ -104,10 +111,36 @@ body{
     background-color: #84c225;
     color: white;
 }
-#login-signup:hover > .login-dopdown,
+#afterLogin:hover> .login-dopdown,
 #location-main:hover>.location-part1{
     display: block;
+    z-index: 1;
+}
+#beforeLogin>a{
+    font-size: 13px;
+    color: gray;
+    margin-top: 6px;
+    text-decoration: none;
 } 
+#beforeLogin>a:hover{
+    color: #6e9f24;
+}
+#afterLogin{
+    margin-top: 5px;
+}
+#afterLogin>.login:hover{
+    color: #6e9f24;
+}
+#afterLogin>.login{
+    display: flex;
+    font-size: 13px;
+    color: gray;
+}
+#afterLogin>.login>i{
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 .login-dopdown{
     position: absolute;
     margin-top: -15px;
@@ -131,9 +164,10 @@ body{
 }
 .list>a>span{
     text-align: end;
-    padding-left: 20px;
+    margin-left: 20px;
     font-size: 12px;
     font-weight: 500;
+    padding: 1px 5px;
 }
 .list>a:hover{
     background-color: gray;
@@ -160,9 +194,9 @@ body{
     text-align: center;
 }
 .location-part1>input,.location-part1>select,.location-part1>button{
-    padding: 5px 10px;
-    margin-top: 5px;
-    width: 300px;
+    padding: 5px 10px!important;
+    margin-top: 5px!important;
+    width: 300px!important;
 }
 .location-part1>select{
     width: 325px;
@@ -182,9 +216,9 @@ body{
     width: 85%;
 }
 .part2-down>.part2-d-left>input{
-    width: 75%;
-    padding: 5px 10px;
-    outline: none;
+    width: 75%!important;
+    padding: 5px 10px!important;
+    outline: none!important;
 }
 .part2-down>.part2-d-left>button{
     background-color: #84c225;
@@ -192,7 +226,7 @@ body{
     border: none;
     outline: none;
     margin-left: -5px;
-    padding: 4px 6px 8px 6px;
+    padding: 7px 7px 7px 7px;
 }
 .part2-down>.part2-d-left>button>i{
     font-size: 18px;
@@ -224,7 +258,6 @@ body{
     border: 1px solid rgb(193, 193, 193);
     height: 40px;
     text-align: center;
-
 }
 #categories{
     display: flex;
@@ -240,7 +273,7 @@ body{
     
 }
 #categories>p>i{
-    margin-left: 70px;
+    margin-left: 50px;
 }
 #Offer{
     display: flex;
@@ -266,13 +299,15 @@ body{
     display: block;
 }
 #down2{
+    z-index: 1;
     position: absolute;
-    height: 60vh;
+    height: 60vh!important;
     width: 100%;
     margin-top: 44px;
     text-align: start;
     margin-left: -10px;
     display: none;
+    background-color: white;
 }
 #menu1{
     display: grid;
@@ -369,12 +404,13 @@ p{
 .sub11:hover +.sub112{
     margin-top: -290px;
 }
-
-
-
-
-
-.body{
-    height: 300vh;
+#afterLogin{
+    display: none;
+}
+#new{
+    background-color: rgb(214, 27, 27);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
 }
 

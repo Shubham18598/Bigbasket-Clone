@@ -1,3 +1,5 @@
+let homearr=JSON.parse(localStorage.getItem("homedata")) || [];
+
 let fruits_vegArr = [
     {
       imageUrl:
@@ -7,7 +9,8 @@ let fruits_vegArr = [
       kg: "1kg - 60",
       price: "60",
       mrp: 70,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -17,7 +20,8 @@ let fruits_vegArr = [
       kg: "500g-23",
       price: "23",
       mrp: 25,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -27,7 +31,8 @@ let fruits_vegArr = [
       kg: "500g -23",
       price: "23",
       mrp: 30,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -37,14 +42,15 @@ let fruits_vegArr = [
       kg: "500g-42",
       price: "42",
       mrp: 50,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
 ]
 
 
 function displayfun(data){
 
-    data.map(function(el){
+    data.forEach(function(el){
         let box=document.createElement("div");
         box.setAttribute("id","vegi-box");
 
@@ -59,10 +65,8 @@ function displayfun(data){
         img.src=el.imageUrl;
         img.setAttribute("class","imge")
 
-
         box1.append(img)
 
-        
         let box2=document.createElement("div");
         box2.setAttribute("id","name-box");
 
@@ -80,8 +84,6 @@ function displayfun(data){
         kg.setAttribute("class","kg")
 
         box2.append(brand,name,kg)
-
-
 
         let midbox=document.createElement("div");
         midbox.setAttribute("id","midbox")
@@ -131,8 +133,6 @@ function displayfun(data){
 
          midbox.append(mrpprice,delinfo,quantitydiv)
 
-        
-
         // box.append(disprice,img,brand,name,kg,midbox)
 
         box.append(disprice,box1,box2,midbox)
@@ -140,9 +140,7 @@ function displayfun(data){
     })
 
 }
-displayfun(fruits_vegArr)
-
-
+displayfun(fruits_vegArr);
 
 
 let abc_vegArr = [
@@ -154,7 +152,8 @@ let abc_vegArr = [
       kg: "1kg - 160",
       price: "160",
       mrp: 200,
-      brand:"BB Royal"
+      brand:"BB Royal",
+      count:1
     },
     {
       imageUrl:
@@ -164,7 +163,8 @@ let abc_vegArr = [
       kg: "5kg-  649",
       price: "649",
       mrp: 900,
-      brand:"BB Royal"
+      brand:"BB Royal",
+      count:1
     },
     {
       imageUrl:
@@ -174,7 +174,8 @@ let abc_vegArr = [
       kg: "5L -3669",
       price: "3669",
       mrp: 7000,
-      brand:"BB Royal"
+      brand:"BB Royal",
+      count:1
     },
     {
       imageUrl:
@@ -184,14 +185,13 @@ let abc_vegArr = [
       kg: "1kg-135",
       price: "135",
       mrp:199,
-      brand:"BB Royal"
+      brand:"BB Royal",
+      count:1
     },
 ]
 
-
 function disfun(data){
-
-    data.map(function(el){
+    data.forEach(function(el){
         let box=document.createElement("div");
         box.setAttribute("id","vegi-box");
 
@@ -206,9 +206,7 @@ function disfun(data){
         img.src=el.imageUrl;
         img.setAttribute("class","imge")
 
-
         box1.append(img)
-
         
         let box2=document.createElement("div");
         box2.setAttribute("id","name-box");
@@ -227,8 +225,6 @@ function disfun(data){
         kg.setAttribute("class","kg")
 
         box2.append(brand,name,kg)
-
-
 
         let midbox=document.createElement("div");
         midbox.setAttribute("id","midbox")
@@ -271,14 +267,12 @@ function disfun(data){
         but.innerText="ADD"
         but.setAttribute("class","addbut")
         but.addEventListener("click",function(){
-            addfun(el)
+            addfunVeg(el)
         })
 
         quantitydiv.append(qty,input,but);
 
-         midbox.append(mrpprice,delinfo,quantitydiv)
-
-        
+         midbox.append(mrpprice,delinfo,quantitydiv)        
 
         // box.append(disprice,img,brand,name,kg,midbox)
 
@@ -287,13 +281,41 @@ function disfun(data){
     })
 
 }
-disfun(abc_vegArr)
 
-let homearr=JSON.parse(localStorage.getItem("tshirts")) || []
+disfun(abc_vegArr);
+
+console.log(homearr)
 
 function addfun(el){
-     console.log(el)
-     homearr.push(el)
-     localStorage.setItem("homedata",JSON.stringify(homearr))
-     alert("product add sucessfully ")
-    }
+     console.log(el);
+     homearr.push(el);
+     localStorage.setItem("homedata",JSON.stringify(homearr));
+     swal({
+      title: "Successfull!",
+      text: "Successfully Product Added to Basket..",
+      icon: "success",
+      button: "Continue",
+    }).then(function (){
+      window.location.reload();
+    }) 
+
+}
+addfunVeg=(el)=>{
+  console.log(el);
+  homearr.push(el);
+  localStorage.setItem("homedata",JSON.stringify(homearr));
+  swal({
+    title: "Successfull!",
+    text: "Successfully Product Added to Basket..",
+    icon: "success",
+    button: "Continue",
+  }).then(function (){
+    window.location.reload();
+  }) 
+
+}
+
+
+
+
+

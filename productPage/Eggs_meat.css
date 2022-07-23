@@ -18,6 +18,7 @@ body{
 }
 #sidebox{
     margin-top:2%;
+    border-right: 1px solid grey;
 
 }
 #brandcheckbox{
@@ -179,10 +180,7 @@ input{
     padding-left: 30px;
     padding-top: 2px;
 }
-#vertical-line{
-    width:1px;
-    height:auto;
-}
+
 .bbcombo{
     margin-top: -3px;
 }
@@ -195,4 +193,17 @@ input{
     margin-top: 7%;
     border-radius: 8px;
     cursor: pointer;
+}
+#brotos{
+    padding-top: -2%;;
+}
+#navigation {
+    margin-top: -13px;
+}
+#Hometext{
+    margin-left: 12%;
+}
+#Hometext>p{
+    font-size: 13px;
+
 }

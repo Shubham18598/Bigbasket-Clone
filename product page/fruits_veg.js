@@ -34,9 +34,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Onion",
       kg: "1kg",
-      price: "Rs60",
+      price: "60",
       mrp: 38.38,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -44,9 +45,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Ladies Finger",
       kg: "500g",
-      price: "Rs23.19",
+      price: "23.19",
       mrp: 19,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -54,9 +56,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "CauliFlower",
       kg: "1 pc (approx. 400 to 600 g)",
-      price: "Rs23.19",
+      price: "23.19",
       mrp: 19,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -64,9 +67,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Green Peas",
       kg: "500g",
-      price: "Rs42.50",
+      price: "42.50",
       mrp: 34,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -74,9 +78,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Tender Coconut - Medium",
       kg: "1pc",
-      price: "Rs38.75",
+      price: "38.75",
       mrp: 31,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -84,9 +89,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Cucumber",
       kg: "500g",
-      price: "Rs17.15",
+      price: "17.15",
       mrp: 14,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -94,9 +100,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Potato - New Crop",
       kg: "1kg",
-      price: "Rs33.75",
+      price: "33.75",
       mrp: 27,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -104,9 +111,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Capsicum - Green",
       kg: "500g",
-      price: "Rs52.50",
+      price: "52.50",
       mrp: 42,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -114,9 +122,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Strawberry",
       kg: "200g",
-      price: "Rs60",
+      price: "60",
       mrp: 48,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -124,9 +133,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Baby Apple Shimla",
       kg: "1 kg (Approx. 11-12 pcs)",
-      price: "Rs215",
+      price: "215",
       mrp: 172,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -134,9 +144,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Cabbage",
       kg: "1 pc (approx. 500 g to 800 g)",
-      price: "Rs17.50",
+      price: "17.50",
       mrp: 12.12,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -144,9 +155,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Lemon",
       kg: "250g",
-      price: "Rs22.50",
+      price: "22.50",
       mrp: 18,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -154,9 +166,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Pomegranate",
       kg: "4 pcs (approx. 800 - 880 g)",
-      price: "Rs281.25",
+      price: "281.25",
       mrp: 161,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -164,9 +177,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Brinjal - Bottle Shape",
       kg: "500g",
-      price: "Rs21.25",
+      price: "21.25",
       mrp: 17,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -174,9 +188,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Banana - Yelakki, Organically Grown",
       kg: "500g",
-      price: "Rs50",
+      price: "50",
       mrp: 40,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -184,9 +199,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Sweet Corn",
       kg: "2 pc",
-      price: "Rs46",
+      price: "46",
       mrp: 36,
-      brand:"Fresho"
+      brand:"Fresho",
+      count:1
     },
     {
       imageUrl:
@@ -194,9 +210,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Gajar Halwa",
       kg: "Combo 2 Items",
-      price: "Rs154",
+      price: "154",
       mrp: 128.55,
-      brand:"bb Combo"
+      brand:"bb Combo",
+      count:1
     },
     {
       imageUrl:
@@ -204,9 +221,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Pineapple and Pomegranate Cut",
       kg: "Combo 2 Items",
-      price: "Rs237.50",
+      price: "237.50",
       mrp: 182,
-      brand:"bb Combo"
+      brand:"bb Combo",
+      count:1
     },
     {
       imageUrl:
@@ -214,9 +232,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Gajar Halwa",
       kg: "Combo 2 Items",
-      price: "Rs154",
+      price: "154",
       mrp: 128.55,
-      brand:"bb Combo"
+      brand:"bb Combo",
+      count:1
     },
     {
       imageUrl:
@@ -224,9 +243,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Pineapple and Pomegranate Cut",
       kg: "Combo 2 Items",
-      price: "Rs237.50",
+      price: "237.50",
       mrp: 182,
-      brand:"bb Combo"
+      brand:"bb Combo",
+      count:1
     },
     {
       imageUrl:
@@ -234,9 +254,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Lobia Sprouts",
       kg: "Combo 2 Items",
-      price: "Rs230.50",
+      price: "230.50",
       mrp: 182,
-      brand:"Brotos"
+      brand:"Brotos",
+      count:1
     },
     {
       imageUrl:
@@ -244,9 +265,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Snake Groud",
       kg: "Combo 2 Items",
-      price: "Rs230.50",
+      price: "230.50",
       mrp: 182,
-      brand:"Gopalan Organic"
+      brand:"Gopalan Organic",
+      count:1
     },
     {
       imageUrl:
@@ -254,9 +276,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Lotus",
       kg: "2 steams",
-      price: "Rs80",
+      price: "80",
       mrp: 100,
-      brand:"Hoovu Fresh"
+      brand:"Hoovu Fresh",
+      count:1
     },
     {
       imageUrl:
@@ -264,9 +287,10 @@ let fruits_vegArr = [
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Tulsi Masala",
       kg: "2kg",
-      price: "Rs80",
+      price: "80",
       mrp: 100,
-      brand:"Hoovu Fresh"
+      brand:"Hoovu Fresh",
+      count:1
     },
 
 
@@ -366,9 +390,9 @@ function displayproduct( fruits_vegArr){
   
  
   function addtocart(el){
-
-    cartArr.push(el);
-    localStorage.setItem("cartItems",JSON.stringify(cartArr));
+    console.log(el)
+    // cartArr.push(el);
+    // localStorage.setItem("cartItems",JSON.stringify(cartArr));
    
 
   }

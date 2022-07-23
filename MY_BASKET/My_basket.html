@@ -135,6 +135,7 @@
         font:14px "Roboto Slab",serif;
         margin-left: 8px;
         color: #5f616b;
+        
     }
     
     #icon{
@@ -194,12 +195,40 @@
     #box img{
         margin-left: 40px;
     }
+    .quantity{
+        display: flex;
+        border: none;
+    }
+    .btn-q{
+        border: none;
+        width: 20px;
+        height: 20px;
+        border:1px solid rgba(143, 134, 134, 0.603); 
+        border-color:rgba(143, 134, 134, 0.603); ;
+        /* border-left: none;
+        border-right: none; */
+        
+        
+    }
+    #count-price{
+        border:1px solid rgba(143, 134, 134, 0.603); 
+        /* height:1px ;  */
+        /* margin-top: -8px;
+        padding-top: 5px; */
+        border-left: none;
+        border-right: none;
+    }
+    #count-price>td{
+        font-size: 11px;
+        padding: 3px 5px 1px 5px;
+        /* border:1px solid rgba(143, 134, 134, 0.603);  */
+    }
     </style>
 </head>
 <body>
 <div id="main">
     <div id="basket_line">
-        <p>Your Basket (" ")</p>
+        <p>Your Basket (<span id="item_length"></span>)</p>
         
     </div>
     <!-- <div id="promo-button"> -->
@@ -244,7 +273,7 @@
            </div>
            <div id="saving">
             <p style="color:rgba(255, 0, 0, 0.616); text-align: center;"><i class="fa-solid fa-piggy-bank" style="color:rgba(255, 0, 0, 0.575);"></i>
-                <br>You Saved!
+                <br>You Saved! <span id="a"></span>
             </p> 
            </div>
            <div id="check-btn">

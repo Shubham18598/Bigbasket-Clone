@@ -38,7 +38,8 @@ slideShow();
       prod_piece_unit: "",
       brand: "Heritage",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Homogenised Toned Milk",
@@ -49,7 +50,9 @@ slideShow();
       prod_piece_unit: "",
       brand: "Amul",
       prod_rating: "4.2",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
+      
     },
     {
       name: "Butter - Pasteurized",
@@ -60,7 +63,8 @@ slideShow();
       prod_piece_unit: "1",
       brand: "Amul",
       prod_rating: "4.2",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "White Sandwich Bread - Safe, Preservative Free",
@@ -71,7 +75,8 @@ slideShow();
       prod_piece_unit: "1",
       brand: "Fresho",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Britannia Cheese Slices 100 g + Fresho Multigrain Bread 400 g",
@@ -82,7 +87,8 @@ slideShow();
       prod_piece_unit: "1",
       brand: "BB Combo",
       prod_rating: "3.8",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Choco Muffills - Centre Filled, Soft, Spongy & Fluffy, Dessert/Snack",
@@ -93,7 +99,9 @@ slideShow();
       prod_piece_unit: "1",
       brand: "Britannia",
       prod_rating: "4",
-      prod_type: "nonveg"
+      prod_type: "nonveg",
+      count:1
+
     },
     {
       name: "Black Forest Cake",
@@ -104,7 +112,8 @@ slideShow();
       prod_piece_unit: "",
       brand: "Fresho Signature",
       prod_rating: "4.2",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Curd",
@@ -115,7 +124,8 @@ slideShow();
       prod_piece_unit: "",
       brand: "Heritage",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Sandwich Bread - White, Chemical Free 400G + Eggs - Regular 6pcs",
@@ -126,7 +136,8 @@ slideShow();
       prod_piece_unit: "1",
       brand: "Fresho",
       prod_rating: "3.8",
-      prod_type: "nonveg"
+      prod_type: "nonveg",
+      count:1
     },
     {
         name: "Butter",
@@ -137,7 +148,8 @@ slideShow();
         prod_piece_unit: "1",
         brand: "Amul",
         prod_rating: "3.8",
-        prod_type: "nonveg"
+        prod_type: "nonveg",
+        count:1
       },
       {
         name: "Lactose Free Milk",
@@ -148,7 +160,8 @@ slideShow();
         prod_piece_unit: "1",
         brand: "Amul",
         prod_rating: "3.8",
-        prod_type: "nonveg"
+        prod_type: "nonveg",
+        count:1
       },
       {
         name: "Treat Croissant - Vanilla Creme Filling, 100% Veg,",
@@ -159,7 +172,8 @@ slideShow();
         prod_piece_unit: "1",
         brand: "Britannia",
         prod_rating: "3.8",
-        prod_type: "nonveg"
+        prod_type: "nonveg",
+        count:1
       }
   ];
 

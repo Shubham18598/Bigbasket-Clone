@@ -1,17 +1,24 @@
 let cartArr=JSON.parse(localStorage.getItem("cartItems"))||[];
     
 let totalPrice=0;
+let count = 1;
+let totalS=0;
+
+// let savingPrice = 0;
+
+let length=cartArr.length;
+document.getElementById("item_length").innerText=length+" "+"items";
 
      
     display(cartArr)
     function display(data){
       let div = document.querySelector("tbody")
       div.innerHTML=null;
-      
+  
         data.forEach(function(el,index){
-            let pr=+el.price, mrp=+el.mrp;
+            let pr=+el.price;
+            let mrp=+el.mrp;
             totalPrice+=pr;
-
 
             let tr = document.createElement("tr")
             tr.setAttribute("class","tr")
@@ -28,7 +35,8 @@ let totalPrice=0;
             brand.innerText=el.brand
           
             let quantity = document.createElement("td")
-            quantity.innerText="?"
+            // quantity.innerText="?"
+            quantity.setAttribute("class","quantity")
 
             let subtotal = document.createElement("td")
             subtotal.innerText="Rs"+" "+mrp
@@ -42,24 +50,81 @@ let totalPrice=0;
                 removeItem(el,index)
             })
 
-          
+            // Quantiy button
+            let countDiv=document.createElement("div");
+            let p3 = document.createElement("td");
+            p3.innerText = count;
+            countDiv.setAttribute("id","count-price");
+            countDiv.append(p3)
 
-
+            //savings
             let saving = document.createElement("td")
-            let save=mrp-pr;
-            saving.innerText=save.toFixed(2);
-            
+            let save1=mrp-pr;
+              let save=Math.abs(count*save1);
+              totalS+=save;
+              saving.innerText=save.toFixed(2);
+            saving.style="color:rgba(260, 0, 0, 0.900)"
 
+            let button1 = document.createElement("button");
+            button1.innerText = "+";
+            button1.setAttribute("class","btn-q")
+
+            button1.addEventListener("click", function () {
+              // let c=plus(count);
+              count=count+1;
+              // p3.innerText = count;
+              let subT=(count * pr).toFixed(2)
+              subtotal.innerText = subT;
+              let save1=mrp-pr;
+              let save=Math.abs(count*save1);
+              saving.innerText=save.toFixed(2);
+              totalS+=Number(saving.innerText);
+
+              incFun(subT,index)
+            });
+
+            let button2 = document.createElement("button");
+            button2.innerText = "-";
+            button2.setAttribute("class","btn-q")
+            button2.addEventListener("click", function () {
+              count=count-1;
+              if (count <= 0) {
+                count = 1;
+              } else {
+                p3.innerText = count;
+                c=count;
+                subtotal.innerText = (count * pr).toFixed(2);
+                let save1=mrp-pr;
+                let save=Math.abs(count*save1);
+                // totalS+=save;
+                saving.innerText=save.toFixed(2);
+                totalS+=Number(saving.innerText);
+              }
+            });
+
+            // console.log("saving",totalS+=Number(saving.innerText),saving.innerText)
+
+            quantity.append(button1,countDiv,button2)
             tr.append(name,price,quantity,subtotal,btn,saving)
             document.querySelector("tbody").append(tr)
             
             
         })
-        
-      
-        
-        
+  
     }
+
+    incFun=(subT,i)=>{
+      console.log(i)
+      cartArr.forEach((element,index) => {
+        if(index==i){
+          element.price=subT;
+        }
+      });
+
+      localStorage.setItem("cartArr",JSON.stringify(cartArr));
+      display(cartArr)
+    }
+
    
     // localStorage.setItem("cartItmes",JSON.stringify(cartArr))
     // window.location.reload()
@@ -74,10 +139,13 @@ let totalPrice=0;
   
     }
 
-console.log(totalPrice);
+
+
+// console.log(totalPrice);
 document.querySelector("#total").innerText="Rs."+" "+totalPrice;
 document.querySelector("#subp").innerText="Rs."+" "+totalPrice;
 document.querySelector("#coupon").innerText="*For this order: Accepted food coupon is"+"Rs."+" "+totalPrice;
+document.querySelector("#a").innerText=totalS;
 
 
 

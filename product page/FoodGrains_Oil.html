@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Foodgrains.css">
+    <title>FOODGRAINS, OIL & MASALA- bigbasket</title>
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png" type="image/x-icon">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   
+</head>
+<body>
+     <!-- Home sliding image  -->
+<div id="Hometext">
+    <p>HOME> FOODGRAINS, OIL & MASALA</p>
+</div>
+<div id="slidingimg"></div>
+<div id="centerImg">
+    <img src=" https://www.bigbasket.com/media/uploads/flatpages/test-1/Fruits%20&%20vegetables.jpg" alt="">
+</div>
+
+
+
+    
+ 
+<div id="vegcontainer">
+ <!-- ---------------------sidebox---------------- -->
+     <div id="sidebox">
+        <div id="category">Category   
+       <hr>
+               <div id="h1"><p>FOODGRAINS, OIL & MASALA</p></div>
+                <p> Atta, Flours & Sooji (328)</p>
+                <p>Dals & Pulses (415)</p>
+                <p>Dry Fruits (800)</p>
+                <p>Edible Oils & Ghee (570)</p>
+                <p>Masalas & Spices (1484)</p>
+                <p>Organic Staples (1157)</p>
+                <p>Salt, Sugar & Jaggery (289)</p>
+         </div>
+      
+                      <!-- brandbox -->
+       <div id="mainbrand">
+        <div>
+            <p>Brand</p>
+            <hr style="margin-top:-12px">
+            <input type="text"placeholder="search by brand" id="search" >
+            <button id="brandsearch"  onclick="search()"><img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpGVTYEXKYF1KNDjXcS7yuWOfeA3Z7zcs6PhLzuw6ugQ&s" alt=""></button>
+           </div>
+           <div id="brandcheckbox">
+            <input type="checkbox" id="fresh" onchange="fortune()"><p>Fortune</p>
+           </div>
+         
+           <div id="brandcheckbox">
+            <input type="checkbox" id="bbcombo" class="bbcombo" onchange="Aashirvaad()" ><p class="bbcombo">Aashirvaad</p>
+           </div>
+           <div id="brandcheckbox">
+            <input type="checkbox" id="brotos" onchange="Amul()" ><p class="brotos"> Amul</p>
+           </div>
+           <div id="brandcheckbox">
+            <input type="checkbox" id="bbcombo" class="bbcombo" onchange="BB_Popular()" ><p class="bbcombo"> BB_Popular</p>
+           </div>
+           <div id="brandcheckbox">
+            <input type="checkbox" id="bbcombo" class="bbcombo" onchange=" BB_Royal()" ><p class="bbcombo">BB Royal</p>
+           </div>
+           <div id="brandcheckbox">
+            <input type="checkbox" id="bbcombo" class="bbcombo" onchange="Tata_Sampann()" ><p class="bbcombo"> Tata Sampann</p>
+           </div>
+           
+        </div>
+        
+       
+
+    </div>
+      
+
+       <!-- Fruits and Vegetables Page -->
+       <div id="mainbox">
+          <div id="upperbox">
+              <div id="heading_box">
+
+                <div id="mediumdiv"> 
+                 <div>
+                    <p>FOODGRAINS, OIL & MASALA(1429)</p>
+                </div>
+               
+                <div>
+                    <select name="" id="sorting" onchange="sortprice()">
+                           <option value="--">Popularity</option>
+                           <option value="l2h">Price-Low to High</option>
+                           <option value="h2l"> Price-High to Low</option>
+                    
+                    </select>
+                </div>
+             </div>
+                
+                <div id="trucklogo">
+                    <img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/standard-del.svg " alt="Truck logoo">
+                    <p>ALL PRODUCTS</p>
+                    
+                </div>
+                <hr style="margin-top:-12px">
+
+                
+              </div>
+
+          </div>
+          
+        
+          <div id="container"> </div>
+       </div>
+</div>
+
+</body>
+</html>
+<script src="FoodGrains.js"></script>

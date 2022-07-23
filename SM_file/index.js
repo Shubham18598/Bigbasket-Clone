@@ -4,8 +4,8 @@ let fruits_vegArr = [
         "https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Onion",
-      kg: "1kg - Rs60",
-      price: "Rs60",
+      kg: "1kg - 60",
+      price: "60",
       mrp: 70,
       brand:"Fresho"
     },
@@ -14,8 +14,8 @@ let fruits_vegArr = [
         "https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg",
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Ladies Finger",
-      kg: "500g-RS23",
-      price: "Rs23",
+      kg: "500g-23",
+      price: "23",
       mrp: 25,
       brand:"Fresho"
     },
@@ -24,8 +24,8 @@ let fruits_vegArr = [
         "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "CauliFlower",
-      kg: "500g -Rs23",
-      price: "Rs23",
+      kg: "500g -23",
+      price: "23",
       mrp: 30,
       brand:"Fresho"
     },
@@ -34,8 +34,8 @@ let fruits_vegArr = [
         "https://www.bigbasket.com/media/uploads/p/s/10000283_11-fresho-green-peas.jpg",
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Green Peas",
-      kg: "500g-Rs42",
-      price: "Rs42",
+      kg: "500g-42",
+      price: "42",
       mrp: 50,
       brand:"Fresho"
     },
@@ -90,7 +90,7 @@ function displayfun(data){
         mrpprice.setAttribute("class","mrpprice");
 
         let mrp=document.createElement("p");
-        mrp.innerText= "MRP Rs"
+        mrp.innerText= "MRP "
         mrp.setAttribute("class","mrp")
 
         let pr=document.createElement("p")
@@ -151,8 +151,8 @@ let abc_vegArr = [
         "https://www.bigbasket.com/media/uploads/p/s/10000442_18-bb-royal-peanuts-mungaphalishengdana-raw.jpg",
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Peanuts/Kadalekayi",
-      kg: "1kg - Rs160",
-      price: "Rs160",
+      kg: "1kg - 160",
+      price: "160",
       mrp: 200,
       brand:"BB Royal"
     },
@@ -161,8 +161,8 @@ let abc_vegArr = [
         "https://www.bigbasket.com/media/uploads/p/s/40135858_8-bb-royal-organic-turtoor-dal.jpg",
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Organic - Toor Dal/Togari Bele",
-      kg: "5kg- RS 649",
-      price: "Rs649",
+      kg: "5kg-  649",
+      price: "649",
       mrp: 900,
       brand:"BB Royal"
     },
@@ -171,8 +171,8 @@ let abc_vegArr = [
         "https://www.bigbasket.com/media/uploads/p/s/40120011_7-disano-olive-oil-extra-virgin.jpg",
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Extra Virgin Olive Oil",
-      kg: "5L -Rs3669",
-      price: "Rs3669",
+      kg: "5L -3669",
+      price: "3669",
       mrp: 7000,
       brand:"BB Royal"
     },
@@ -181,8 +181,8 @@ let abc_vegArr = [
         "https://www.bigbasket.com/media/uploads/p/s/30005420_11-bb-popular-moong-dal.jpg",
       logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
       name: "Moong Dal/Hesaru Bele",
-      kg: "1kg-Rs135",
-      price: "Rs135",
+      kg: "1kg-135",
+      price: "135",
       mrp:199,
       brand:"BB Royal"
     },

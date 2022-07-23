@@ -42,7 +42,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Fortune",
       prod_rating: "4.1",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Shudh Chakki Atta - Whole Wheat Flour, No Maida, For Fit & Healthy Lifestyle",
@@ -53,7 +54,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Aashirvaad",
       prod_rating: "4.1",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Sugar",
@@ -64,7 +66,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Popular",
       prod_rating: "3.8",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Cumin/Jeera - Whole",
@@ -75,7 +78,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Royal",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Unpolished Toor Dal/Arhar Dal",
@@ -86,7 +90,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Tata Sampann",
       prod_rating: "4.1",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
     name: "Tata Salt Iodized",
@@ -97,7 +102,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Tata Salt",
       prod_rating: "4.6",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Atta Sharbati 100% MP Whole Wheat Rotis Stay Softer For Longer",
@@ -108,7 +114,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Royal",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Select Sharbati Atta - 100% MP Whole Wheat, Rotis Stay Softer For Longer",
@@ -119,7 +126,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Aashirvaad",
       prod_rating: "4.2",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Sun Lite - Sunflower Refined Oil",
@@ -130,7 +138,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Fortune",
       prod_rating: "4.1",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
      name: "Cashew/Kaju - Whole",
@@ -141,7 +150,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Popular",
       prod_rating: "3.9",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Sun Lite - Sunflower Refined Oil",
@@ -152,7 +162,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Fortune",
       prod_rating: "4.1",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Cow Ghee",
@@ -163,7 +174,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Amul",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Refined Sugar (Sulphurless)",
@@ -174,7 +186,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Royal",
       prod_rating: "3.9",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Gold - Pro Healthy Lifestyle Edible Oil",
@@ -185,7 +198,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Saffola",
       prod_rating: "3.7",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Moong Dal",
@@ -196,7 +210,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Royal",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Almond/Badam - Californian, Giri",
@@ -207,7 +222,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Popular",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Poha/Avalakki/Aval/Chivda - Thick",
@@ -218,7 +234,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Royal",
       prod_rating: "3.8",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Toor Dal/Arhar Dal - Desi",
@@ -229,7 +246,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Royal",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Peanuts/Mungaphali/Shengdana - Raw",
@@ -240,7 +258,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "BB Royal",
       prod_rating: "4",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     },
     {
       name: "Pure Ghee",
@@ -251,7 +270,8 @@ let foodGrainsDB = [
       prod_piece_unit: "",
       brand: "Amul",
       prod_rating: "4.1",
-      prod_type: "veg"
+      prod_type: "veg",
+      count:1
     }
   ];
 

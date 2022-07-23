@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/c9301aff29.js" crossorigin="anonymous"></script>
     <style>
     body{
         background-color: rgba(143, 134, 134, 0.164);
@@ -18,64 +19,181 @@
     }
     #main{
         width:70%;
-        height: 100%;
+        height: auto;
         margin-left: 15%;
         margin-right: 15%;
         background-color: white
     }
-    #icon{
-        width: 3%;
-        height: 5%;
-    }
-    #promo-button p{
-        color: #6D6E71;
-        font: 12px Lato,sans-serif;
-    }
-    #promo-button button{
+   
+    #promo-button {
         height: 5%;
         width: 20%;
         margin-top: 2%;
-        padding-bottom: 33px;
-        background: linear-gradient(180deg,#fff 35%,#ebedea 99%);
+        background: linear-gradient(180deg,#fff 35%,#ebedea 100%);
         border: 1px solid orange;
         border-radius: 5px;
         margin-left: 2%;
         cursor: pointer;
         display: inline-block;
+        color: #6D6E71;
+        font: 12px Lato,sans-serif;
     }
-   
+
+    #promo-button:hover{
+        background: linear-gradient(180deg,#fff 35%,#ebedea 99%);
+    }
+
     table {
     border-collapse: collapse;
     width: 95%;
     margin: auto;
     margin-top: 50px;
-    text-align: center;
+    text-align:center;
     }
+
     table td,
     table th {
     padding: 8px;
-    text-align: center;
-    
     }
 
     table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #555;
+    background-color: rgba(85, 85, 85, 0.877);
     color: white;
     text-align: center;
     font-size: 12px;
     font: Roboto Slab,serif;
     }
+
     tr{
-        
         border-bottom: 1px solid  rgba(143, 134, 134, 0.164);
-       
-        
     }
 
-   
+    #Empty-button{
+        height: 5%;
+        width: 15%;
+        margin-top: 2%;
+        background: linear-gradient(180deg,#fff 35%,#ebedea 99%);
+        border: 1px solid green;
+        border-radius: 5px;
+        margin-left: 2%;
+        cursor: pointer;
+        display: inline-block;
+        color: #6D6E71;
+        font: 12px Lato,sans-serif;
+    }
+ 
+    #checkout{
+        border:1px solid  rgba(143, 134, 134, 0.603);
+        height:auto;
+        width:auto;
+        margin-left: 49%;
+        margin-top: -3%;
+        margin-right: 10px;
+        background: linear-gradient(180deg,#fff 35%,#ebedea 99%);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
+    
+    #sub{
+        height: auto;
+        width: 130%;
+    }
+    
+    #saving{
+        border-left:1px solid  rgba(143, 134, 134, 0.603);
+        width:70%;
+        height: 80%;
+        margin-left: 67px;
+    }
+    
+    #check-btn{
+        width: 200%;
+        height: 100%;
+    }
+    
+    #continue-btn{
+        margin-top: -80px;
+        height: 5%;
+        width: 20%;
+        background: linear-gradient(180deg,#fff 35%,#ebedea 99%);
+        border-radius: 5px;
+        margin-left: 2%;
+        cursor: pointer;
+        display: inline-block;
+        color: #6D6E71;
+        font: 12px Lato,sans-serif;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border: none;
+    }
+    
+    #checkout p{
+        font:14px "Roboto Slab",serif;
+        margin-left: 8px;
+        color: #5f616b;
+    }
+    
+    #icon{
+        margin-left:8px;
+        
+    }
+    
+    #pro-sidebar{
+        /* border:1px solid black; */
+        height: 60%;
+        width: 23%;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color:#F2F2F2;
+    }
+    
+    #reco-pro{
+        /* border: 1px solid red; */
+        height:95%;
+        width: 70%;
+        margin-top: 10px;
+        margin-left: 10px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+    }
+    
+    #recommended{
+        display: flex;
+        height: 70%;
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+    
+    #pro-sidebar p{
+        border-bottom: 1px solid #d9d9d9;
+        height: 12%;
+        font-size: 24px;
+        text-align: start;
+        padding-top: 10px;
+        color: #656565;
+        font: 400 20px Lato, sans-serif;
+        margin-left: 10px;
+    }
+
+    
+    #box{
+        box-shadow: rgba(141, 138, 138, 0.24) 0px 3px 8px;
+        height:70%;
+    }
+    
+    #box p{
+        text-align: center;
+    }
+    
+    #box img{
+        margin-left: 40px;
+    }
     </style>
 </head>
 <body>
@@ -84,11 +202,12 @@
         <p>Your Basket (" ")</p>
         
     </div>
-    <div id="promo-button">
-        <button>
-            <p>VIEW AVAILABLE PROMO</p> 
+    <!-- <div id="promo-button"> -->
+        <button id="promo-button">
+            <i class="fa-duotone fa-p" style="margin-right: 10px; color: orange;"></i>
+            VIEW AVAILABLE PROMO
         </button>
-    </div>
+    <!-- </div> -->
         <table>
             <thead>
                 <tr>
@@ -96,13 +215,71 @@
                     <th>UNIT PRICE</th>
                     <th>QUANTITY</th>
                     <th>SUBTOTAL</th>
-                    <th style="background: #c6cc74">SAVINGS</th>
+                    <th></th>
+                    <th style="background: #c6cc74;">SAVINGS</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- For appending basket items -->
             </tbody>
         </table>
+        <button id="Empty-button">
+            <i class="fa-solid fa-basket-shopping" style="margin-right: 10px;"></i>EMPTY BASKET
+        </button>
+        <div id="checkout">
+           <div id="sub">
+            <p style="font-size: 16px;margin-left: 8px;">
+                Subtotal
+                <p id="subp"  style="text-align:end; margin-top:-35px; margin-right: 10px; font-size:16px;"></p>
+            </p>
+            <p>Delivery Charges</p>
+            <div style="border-bottom: 1px solid  rgba(143, 134, 134, 0.603); margin-left: 10px; margin-right: 10px;"></div>
+            <h3 style="font-size: 25px;margin-left: 8px;font: Roboto Slab,serif;color: #424349;">
+                TOTAL
+                <p id="total" style="text-align:end; margin-top:-30px; margin-right: 10px; font-size:25px; color: #1e1e20;">
+                </p>
+            </h3>
+            <p id="coupon">*For this order: Accepted food coupon is</p>
+            <div  style="border-bottom: 1px solid  rgba(143, 134, 134, 0.603); width: 145%; margin-left: 10px; margin-right: 10px;"></div>
+           </div>
+           <div id="saving">
+            <p style="color:rgba(255, 0, 0, 0.616); text-align: center;"><i class="fa-solid fa-piggy-bank" style="color:rgba(255, 0, 0, 0.575);"></i>
+                <br>You Saved!
+            </p> 
+           </div>
+           <div id="check-btn">
+            <button style="margin-left:55%; width: 190px; height: 60px; margin-top: 10px; background: linear-gradient(180deg,#fee67c 0,#f2cb76); border:none; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; font-size: 22px; font-family:'Courier New', Courier, monospace; font-weight: bold; color: #545768;">
+                <a href="/spotless-wing-656/Checkout/checkout.html"> CHECKOUT
+                <i class="fa-solid fa-circle-arrow-right" id="icon"></i></a>
+            </button>
+            <p>** Actual delivery charges computed at checkout time</p>
+           </div>
+           
+        </div>
+        <button id="continue-btn">CONTINUE SHOPPING</button>
+
+        <h3 style="margin-left: 10px; color: #6f7174; font:28px Roboto Slab">Missed Something?</h3>
+        <div  style="border-bottom: 1px solid  rgba(143, 134, 134, 0.603); width: 98%; margin-left: 10px";></div>
+        <div id="recommended">
+            <div id="pro-sidebar">
+                <div>
+                    <p>Best Deals</p>
+                </div>
+                <div>
+                    <p>Top Offers</p>
+                </div>
+                <div>
+                    <p>Essentials</p>
+                </div>
+                <div>
+                    <p style="border-bottom:none;">Quick Bites</p>
+                </div>
+            </div>
+            <div id="reco-pro">
+    
+            </div>
+        </div>
+        
 </div>
 
 </body>

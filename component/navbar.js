@@ -3,11 +3,11 @@ let navbar=()=>{
                 <div id="navbar-up">
                     <div id="part1">
                         <div id="big">
-                            <img src="https://www.bbassets.com/static/staticContent/bb_logo.png" alt="logo">
+                            <a href="../index.html"><img src="https://www.bbassets.com/static/staticContent/bb_logo.png" alt="logo"></a>
                         </div>
                         <div id="small">
                             <div class="sm">
-                                <img src="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png" alt="logo">
+                                <a href="../index.html"><img src="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png" alt="logo"></a>
                                 <p>SHOP <i class="fa fa-angle-down"></i></p>
                             </div>
                             <div id="down2">
@@ -143,8 +143,7 @@ let navbar=()=>{
                                         </div>
                                         <div id="menu1">
                                             <div class="sub5">
-                                        <p class="sub-menu1 snacks">Snacks & Branded Foods</p>
-
+                                                <p class="sub-menu1 snacks">Snacks & Branded Foods</p>
                                             </div>
                                             <div class="sub52">
                                                 <div id="snacks">
@@ -180,7 +179,6 @@ let navbar=()=>{
                                         <div id="menu1">
                                             <div class="sub6">
                                                 <p class="sub-menu1 beauty">Beauty & Hygiene</p>
-
                                             </div>
                                             <div class="sub62">
                                                 <div id="beauty">
@@ -405,17 +403,27 @@ let navbar=()=>{
                                 </div>
                             </div>
                             <div id="login-signup">
-                                <p class="login"><i class="fa fa-user-o"></i>Login/Sign Up<i class="fa fa-angle-down"></i></p>
-                                <div class="login-dopdown">
-                                    <div class="list">
-                                        <a href="#">My Account</a>
-                                        <a href="#">My Basket <span id="itemsCount">2 items</span></a>
-                                        <a href="#">My Orders</a>
-                                        <a href="#">Wallet</a>
-                                        <a href="#">My Rewards <span>New</span></a>
-                                        <a href="#">Ask Us<span>New</span></a>
-                                        <a href="#">Customer Service</a>
-                                        <a href="#">Logout</a>
+                                <div id="beforeLogin">
+                                    <a class="login" href="../credentials/signup.html" target="_blank">
+                                    <i class="fa fa-user-o"></i>Login/Sign Up</a>
+                                </div>
+                                <div id="afterLogin">
+                                    <span class="login">
+                                        <i class="fa fa-user-o"></i>
+                                        <p id="userName"></p>
+                                        <i class="fa fa-angle-down"></i>
+                                    </span>
+                                    <div class="login-dopdown">
+                                        <div class="list">
+                                            <a href="../myAccount/edit.html">My Account</a>
+                                            <a href="../MY_BASKET/My_basket.html">My Basket <span id="itemsCount"></span></a>
+                                            <a href="../MY_BASKET/My_orders.html">My Orders</a>
+                                            <a href="#">Wallet</a>
+                                            <a href="#">My Rewards <span id="new">New</span></a>
+                                            <a href="#">Ask Us<span id="new">New</span></a>
+                                            <a href="#">Customer Service</a>
+                                            <a href="../credentials/logout.html">Logout</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div> 
@@ -431,7 +439,7 @@ let navbar=()=>{
                                 </div>
                                 <div class="items">
                                     <p>My Basket</p>
-                                    <p id="itemsCount">2 items</p>
+                                    <p id="itemsCountForBasket"></p>
                                 </div>
                             </div>
                         </div>
@@ -574,8 +582,7 @@ let navbar=()=>{
                                         </div>
                                         <div id="menu1">
                                             <div class="sub5">
-                                        <p class="sub-menu1 snacks">Snacks & Branded Foods</p>
-
+                                                <p class="sub-menu1 snacks">Snacks & Branded Foods</p>
                                             </div>
                                             <div class="sub52">
                                                 <div id="snacks">

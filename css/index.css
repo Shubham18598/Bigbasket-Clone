@@ -1,20 +1,16 @@
 *{
-    margin: 0.5px;
+    margin: 0px;
     padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
-#navbar{
-    border: 1px solid red;
-    height: 80px;
-}
+
 #middle{
+    overflow: hidden;
     width: 100%;
-    height: auto;
-    /* border: 1px solid rgb(43, 111, 221); */
+    z-index: -1;
 }
-#ca{
-    height:auto;
-    /* border: 1px solid red; */
-}
+
 
 #box{
     width: 60%;
@@ -51,6 +47,17 @@
     border-radius: 5px;
             background-color: rgb(49, 207, 49);
             color: white;
+            outline: none;
+            border: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+#bask-head>div>button>a:hover, #sellers-head>div>button>a:hover{
+    text-decoration: none;
+    color: white;
 }
 .b{
     margin: auto;  
@@ -217,11 +224,15 @@ width: 100%;
     width: 40px;
     height: 20px;
     margin-left: 10px;
-    background-color: rgb(224, 234, 39);
+    background-color:#fee67c;
     border-radius: 5px;
-
+    border: none;
+    outline: none;
 }
 .addbut:hover{
     cursor: pointer;
     background-color: rgb(255, 255, 0);
+}
+#footer{
+    margin-top: 50px;
 }

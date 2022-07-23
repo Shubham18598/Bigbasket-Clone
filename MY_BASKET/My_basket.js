@@ -1,4 +1,4 @@
-let cartArr=JSON.parse(localStorage.getItem("cartItems"))||[];
+let cartArr=JSON.parse(localStorage.getItem("homedata"))||[];
     
 let totalPrice=0;
 let count = 1;
@@ -8,7 +8,6 @@ let totalS=0;
 
 let length=cartArr.length;
 document.getElementById("item_length").innerText=length+" "+"items";
-
      
     display(cartArr)
     function display(data){
@@ -72,15 +71,16 @@ document.getElementById("item_length").innerText=length+" "+"items";
             button1.addEventListener("click", function () {
               // let c=plus(count);
               count=count+1;
-              // p3.innerText = count;
+              p3.innerText = count;
               let subT=(count * pr).toFixed(2)
               subtotal.innerText = subT;
               let save1=mrp-pr;
               let save=Math.abs(count*save1);
               saving.innerText=save.toFixed(2);
               totalS+=Number(saving.innerText);
+              price.innerText=(count*pr).toFixed(2);
+              // incFun(subT,index)
 
-              incFun(subT,index)
             });
 
             let button2 = document.createElement("button");
@@ -99,6 +99,8 @@ document.getElementById("item_length").innerText=length+" "+"items";
                 // totalS+=save;
                 saving.innerText=save.toFixed(2);
                 totalS+=Number(saving.innerText);
+              price.innerText=(count*pr).toFixed(2);
+
               }
             });
 
@@ -113,22 +115,20 @@ document.getElementById("item_length").innerText=length+" "+"items";
   
     }
 
-    incFun=(subT,i)=>{
-      console.log(i)
-      cartArr.forEach((element,index) => {
-        if(index==i){
-          element.price=subT;
-        }
-      });
+    // incFun=(subT,i)=>{
+    //   console.log(i)
+    //   cartArr.forEach((element,index) => {
+    //     if(index==i){
+    //       element.price=subT;
+    //     }
+    //   });
 
-      localStorage.setItem("cartArr",JSON.stringify(cartArr));
-      display(cartArr)
-    }
+    //   localStorage.setItem("cartArr",JSON.stringify(cartArr));
+    //   display(cartArr)
+    // }
 
-   
     // localStorage.setItem("cartItmes",JSON.stringify(cartArr))
     // window.location.reload()
-    
     
     function removeItem(el,index,event){
       
@@ -139,17 +139,11 @@ document.getElementById("item_length").innerText=length+" "+"items";
   
     }
 
-
-
 // console.log(totalPrice);
 document.querySelector("#total").innerText="Rs."+" "+totalPrice;
 document.querySelector("#subp").innerText="Rs."+" "+totalPrice;
 document.querySelector("#coupon").innerText="*For this order: Accepted food coupon is"+"Rs."+" "+totalPrice;
 document.querySelector("#a").innerText=totalS;
-
-
-
-
 
 let recoArr = [
   {
@@ -200,3 +194,17 @@ let recoArr = [
 
  }
  displayRec(recoArr)
+
+//  document.getElementById("Empty-button").addEventListener("click",emptyBasket);
+
+ emptyBasket= () =>{
+  localStorage.setItem("homedata",JSON.stringify([]));
+  swal({
+    title: "Your Basket Become Empty!!",
+    text: "Removed All Your Products From Basket!!",
+    icon: "success",
+    button: "Continue",
+  }).then(function (){
+    location.href = "../index.html";
+  })
+ }

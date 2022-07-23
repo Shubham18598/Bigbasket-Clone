@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FruitsVeg.css">
+    <title>BAKERY, CAKES & DAIRY - bigbasket</title>
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png" type="image/x-icon">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+    integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png"
+    type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="navigation">
+
+    </div>
+     <!-- Home sliding image  -->
+    <div id="Hometext">
+        <p>HOME> BACKERY, CAKES AND DAIRY</p>
+    </div>
+    <div id="slidingimg"></div>
+    <div id="centerImg">
+        <img src=" https://www.bigbasket.com/media/uploads/flatpages/test-1/Fruits%20&%20vegetables.jpg" alt="">
+    </div>
+
+    <div id="vegcontainer">
+    <!-- ---------------------sidebox---------------- -->
+        <div id="sidebox">
+            <div id="category">Category   
+        <hr>
+                <div id="h1"><p>Backery Cakes And Dairy</p></div>
+                    <p>Backery Snacks(36)</p>
+                    <p>Breads & Buns (97)</p>
+                    <p>Cakes & Pasteries (6)</p>
+                    <p>Coockies,Rusk & khari</p>
+                    <p>Dairy()761</p>
+                    <p>Gourmet Breads (30)</p>
+                    <p>Ice Cream and Desserts (63)</p>
+            </div>
+        
+                        <!-- brandbox -->
+        <div id="mainbrand">
+            <div>
+                <p>Brand</p>
+                <hr style="margin-top:-12px">
+                <input type="text"placeholder="search by brand" id="search" >
+                <button id="brandsearch"  onclick="search()"><img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpGVTYEXKYF1KNDjXcS7yuWOfeA3Z7zcs6PhLzuw6ugQ&s" alt=""></button>
+            </div>
+            <div id="brandcheckbox">
+                <input type="checkbox" id="fresh" onchange="fresh()"><p>Fresho</p>
+            </div>
+            
+            <div id="brandcheckbox">
+                <input type="checkbox" id="bbcombo" class="bbcombo" onchange="Heritage()" ><p class="bbcombo">Heritage</p>
+            </div>
+            <div id="brandcheckbox">
+                <input type="checkbox" id="brotos" onchange="Amul()" ><p class="brotos"> Amul</p>
+            </div>
+            <div id="brandcheckbox">
+                <input type="checkbox" id="bbcombo" class="bbcombo" onchange="britania()" ><p class="bbcombo">Britania</p>
+            </div>
+            <div id="brandcheckbox">
+                <input type="checkbox" id="bbcombo" class="bbcombo" onchange=" Signature()" ><p class="bbcombo"> Fresho Signature</p>
+            </div>
+            <div id="brandcheckbox">
+                <input type="checkbox" id="bbcombo" class="bbcombo" onchange="bbcombo()" ><p class="bbcombo"> bb combo</p>
+            </div>
+            
+            </div>
+            
+        
+
+        </div>
+        
+
+        <!-- Fruits and Vegetables Page -->
+        <div id="mainbox">
+            <div id="upperbox">
+                <div id="heading_box">
+
+                    <div id="mediumdiv"> 
+                    <div>
+                        <p>BAKERY, CAKES & DAIRY(429)</p>
+                    </div>
+                
+                    <div>
+                        <select name="" id="sorting" onchange="sortprice()">
+                            <option value="--">Popularity</option>
+                            <option value="l2h">Price-Low to High</option>
+                            <option value="h2l"> Price-High to Low</option>
+                        
+                        </select>
+                    </div>
+                </div>
+                    
+                    <div id="trucklogo">
+                        <img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/standard-del.svg " alt="Truck logoo">
+                        <p>ALL PRODUCTS</p>
+                        
+                    </div>
+                    <hr style="margin-top:-12px">
+
+                    
+                </div>
+
+            </div>
+            
+            
+            <div id="container"> </div>
+        </div>
+    </div>
+
+    <div id="footer"> </div>
+</body>
+</html>
+<script src="backery_cakes.js"></script>
+<script type="module" src="../scripts/module.js"></script>
+<script type="module" src="../scripts/foter.js"></script>
+<script src="scripts/readmore.js"></script>
+<script>
+    /* sticky header */
+
+let myScrollFunc = function () {
+    myID = document.getElementById("navbar");
+    var y = window.scrollY;
+    if (y >= 10) {
+        myID.className = "show"
+    } else {
+        myID.className = "hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+</script>

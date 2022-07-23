@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Grocery Shopping and Online Supermarket in India-bigbasket</title>
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png"
+    type="image/x-icon">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: #F3F3F3;
+        }
+        #navbar{
+            height: auto;
+            /* border: 1px solid red; */
+            background-color: white;
+        }
+        #down{
+            display: flex;
+            background-color: white;
+            height: auto;
+            width: 62%;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        #sidebar{
+            border-right: 1px solid grey;
+            width: 27%;
+        }
+        #main{
+            width: 73%;
+        }
+        #profile{
+            
+            margin-left: 45px;
+            width: 94%;
+            height: 700px;
+            padding-top: 25px;
+        }
+        #profile>div{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #58595B;
+            width: 98%;
+            height: 45px;
+            border: none;
+            border-bottom:1px solid #555555;
+        }
+        #profile>div>div:first-child{
+             font-size: 25px;
+             color: #58595B;
+        }
+        #profile>div>div:last-child{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+            padding: 5px 10px;
+            color: #555555;
+            font-size: 16px;
+            height: 20px;
+           
+        }
+        #profile>p{
+            color: #58595B;
+            margin-top: 50px;
+        }
+        #footer{
+            /* border: 1px solid red; */
+        }
+        #navigation {
+            margin-top: -8px;
+        }
+
+        #afterLogin>.login>i {
+            margin-top: 15px;
+        }
+
+        #a1 {
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color: gray;
+        }
+        a:hover{
+            color: #84c225;
+        }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+
+    </div>
+    <hr width="62%">
+    <div id="down">
+        
+        <div id="sidebar">
+            <div id="filter-div">
+                <div id="div-1">
+                    <h4><span>PERSONAL DETAILS</span></h4>
+                </div>
+                <div id="section-1">
+                    <p>
+                        <a href="edit.html">Edit Profile</a>
+                    </p>
+                    <p>
+                        <a href="deliver.html">Delivery Addresses</a>
+                    </p>
+                    <p>
+                        <a href="email.html">Email Addresses</a>
+                    </p>
+                </div>
+                <div id="div-2">
+                    <h4><span>SHOP FROM</span></h4>
+                </div>
+                <div id="section-2">
+                    <p>
+                        <a>Smart Basket</a>
+                    </p>
+                    <p>
+                        <a>Shopping List</a>
+                    </p>
+                    <p>
+                        <a>Past Order</a>
+                    </p>
+                </div>
+                <div id="div-3">
+                    <h4><span>MY ACCOUNT</span></h4>
+                </div>
+                <div id="section-3">
+                    <p>
+                        <a>Customer Service</a>
+                    </p>
+                    <p>
+                        <a href="../MY_BASKET/My_orders.html">My Orders</a>
+                    </p>
+                    <p>
+                        <a>My Wallet</a>
+                    </p>
+                    <p>
+                        <a>My Gift Cards</a>
+                    </p>
+                    <p>
+                        <a>My Payments</a>
+                    </p>
+                    <p>
+                        <a>Refer & Earn</a>
+                    </p>
+                    <p>
+                        <a>Locate On Map</a>
+                    </p>
+                    <p>
+                        <a>Alert & Notification</a>
+                    </p>
+                    <p>
+                        <a>Spend Trends</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="main">
+            <div id="profile">
+               <div>
+                <div>Email Addresses</div>
+                <div>Add Email Address</div>
+               </div>
+               <p>
+                You can add additional email addresses to your account. Once a new email address is validated, you can log in to your<br> 
+                account with that address or your primary email address registered with your account. Your password remains same across<br>
+                 all the email addresses.<br>
+                 Please note that all the email communication is sent to your main email address specified on the account.
+               </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+</html>
+<script type="module" src="../scripts/module.js"></script>
+<script type="module" src="../scripts/foter.js"></script>
+<script src="../scripts/readmore.js"></script>
+<script>
+    /* sticky header */
+
+let myScrollFunc = function () {
+    myID = document.getElementById("navbar");
+    var y = window.scrollY;
+    if (y >= 10) {
+        myID.className = "show"
+    } else {
+        myID.className = "hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+</script>

@@ -1,81 +1,72 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Grocery Shopping and Online Supermarket in India-bigbasket</title>
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png"
+        type="image/x-icon">
     <script src="https://kit.fontawesome.com/c9301aff29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         /* body{
             border: 1px solid black;
         } */
-        #filter-div{
-            margin-left:10%;
-            
-            /* width: 20%; */
+        #filter-div {
+            margin-left: 10%;
+
             box-sizing: border-box;
-            /* border: 1px solid green; */
-            
-
-            
         }
-       h4 span{
+
+        h4 span {
             border-bottom: 2px solid #84c225;
-            /**/
-            /* text-decoration: underline;
-            text-decoration-color:#84c225 ; */
-            /* padding-bottom: 5px; */
-            
-            
-
         }
-        #filter-div h4{
+
+        #filter-div h4 {
             border-bottom: 1px solid #dfdfdf;
             /* margin-right: 5%; */
             color: #222;
             font-family: 'proxima-nova', sans-serif;
             font-size: 16px;
             font-weight: 300;
-            
         }
-        #filter-div p{
+
+        #filter-div p {
             color: #979797;
             font-family: 'proxima-nova', sans-serif;
             font-size: 14px;
         }
-        /* #main-div{
-            box-sizing: border-box;
-            position: relative;
-            float: right;
-            border: 1px solid red;
-            display: flex;
-        } */
-        #order-div{
-            /* border:1px solid red; */
-            /* display:flex; */
+        #order-div {
             margin-left: 5%;
-            border-left:1px solid #dfdfdf;
+            border-left: 1px solid #dfdfdf;
             height: 4cm;
             display: flex;
             justify-items: space-between;
-            
-            
+
+
         }
-        .parent{
-            display:flex ;
+
+        .parent {
+            display: flex;
             /* border: 1px solid black; */
         }
+
         /* #div-1 h4 span{
             border-bottom: 1px solid #dfdfdf;
             border-collapse: separate;
         } */
-        #order-div p{
+        #order-div p {
             padding: 10px;
             font-family: 'proxima-nova', sans-serif;
             font-size: 24px;
             font-weight: 500;
         }
-        #btn{
+
+        #btn {
             padding: 20px 42px;
             /* border-radius: 15px; */
             /* text-align: center; */
@@ -86,32 +77,36 @@
             cursor: pointer;
             position: absolute;
             right: 100px;
-            
-           
+
+
         }
-        #btn  button{
-            height:40px;
-            width:100px;
+
+        #btn button {
+            height: 40px;
+            width: 100px;
             margin-right: 40px;
             background-color: white;
             color: #979797;
-            border:1px solid #979797;
+            border: 1px solid #979797;
             border-radius: 4px;
 
         }
-        #icon{
+
+        #icon {
             margin-right: 10px;
         }
-       /* #order-line{
+
+        /* #order-line{
         margin-top:6%
        } */
-       .hr-sect {
+        .hr-sect {
             display: flex;
             flex-basis: 63%;
             align-items: center;
             color: rgba(0, 0, 0, 0.35);
-            margin: 30px 0px;
+            margin: 60px 0px 0px 0px;
         }
+
         .hr-sect::before,
         .hr-sect::after {
             content: "";
@@ -122,58 +117,124 @@
             line-height: 0px;
             margin: 0px 30px;
         }
-       .hr-sect{
-        margin-bottom: 32%;
-        margin-left: -147px;
-       }
-      
-     
+
+        .hr-sect {
+            margin-bottom: 32%;
+            margin-left: -147px;
+        }
+        #afterLogin>.login>i {
+            margin-top: 15px;
+        }
+        #order{
+            margin-top: 120px;
+            margin-left: -60%;
+            border: 1px solid #84c225;
+            height: 150px;
+            padding: 5px;
+            color: #84c225;
+        }
     </style>
 </head>
+
 <body>
-<div class="parent">
-    <div id="filter-div">
-        <div id="div-1">
-            <h4 ><span>PERSONAL DETAILS</span></h4>
-        </div>
-        <div id="section-1">
-            <p>Edit Profile</p>
-            <p>Delivery Addresses</p>
-            <p>Email Addresses</p>
-        </div>
-        <div id="div-2">
-            <h4><span>SHOP FROM</span></h4>
-        </div>
-        <div id="section-2">
-            <p>Smart Basket</p>
-            <p>Shopping List</p>
-            <p>Past Order</p>
-        </div>
-        <div id="div-3">
-            <h4><span>MY ACCOUNT</span></h4>
-        </div>
-        <div id="section-3">
-            <p>Customer Service</p>
-            <p>My Orders</p>
-            <p>My Wallet</p>
-            <p>My Gift Cards</p>
-            <p>My Payments</p>
-            <p>Refer & Earn</p>
-            <p>Locate On Map</p>
-            <p>Alert & Notification</p>
-            <p>Spend Trends</p>
-        </div>
-       
+    <div id="navigation">
+
     </div>
-    <div id="order-div">
-        <div><p>My Orders</p></div>
-        <div id="btn"><button><i id="icon" class="fa-solid fa-question"></i>HELP</button>
-        <button style=" width:160px; background-color: #8bc03bc4; color:white; border: none;">PAY NOW</button></div>
+    <div class="parent">
+        <div id="filter-div">
+            <div id="div-1">
+                <h4><span>PERSONAL DETAILS</span></h4>
+            </div>
+            <div id="section-1">
+                <p>Edit Profile</p>
+                <p>Delivery Addresses</p>
+                <p>Email Addresses</p>
+            </div>
+            <div id="div-2">
+                <h4><span>SHOP FROM</span></h4>
+            </div>
+            <div id="section-2">
+                <p>Smart Basket</p>
+                <p>Shopping List</p>
+                <p>Past Order</p>
+            </div>
+            <div id="div-3">
+                <h4><span>MY ACCOUNT</span></h4>
+            </div>
+            <div id="section-3">
+                <p>Customer Service</p>
+                <p>My Orders</p>
+                <p>My Wallet</p>
+                <p>My Gift Cards</p>
+                <p>My Payments</p>
+                <p>Refer & Earn</p>
+                <p>Locate On Map</p>
+                <p>Alert & Notification</p>
+                <p>Spend Trends</p>
+            </div>
+
+        </div>
+        <div id="order-div">
+            <div>
+                <p>My Orders</p>
+            </div>
+            <div id="btn"><button><i id="icon" class="fa-solid fa-question"></i>HELP</button>
+                <button style=" width:160px; background-color: #8bc03bc4; color:white; border: none;" onclick="paynow()">PAY NOW</button>
+            </div> 
+        </div>
+        <div class="hr-sect">
+            <p style="font-family: 'proxima-nova', sans-serif; color: rgba(22, 19, 19, 0.685); font-size: 14px; letter-spacing: -.05rem; font-weight: 550;">
+                PAST ORDERS <p>
+        </div>
+        <div id="order">
+            <p>home No:309, abc layout</p>
+            <p>Bangalore, 590030</p>
+            <p>Karnatak, India</p>
+            <p>items : <span id="totalItems"></span></p>
+            <p>Price : <span id="totalPrice"></span></p>
+        </div>
+
+
     </div>
-    <div class="hr-sect">
-        <p style="font-family: 'proxima-nova', sans-serif; color: rgba(22, 19, 19, 0.685); font-size: 14px; letter-spacing: -.05rem; font-weight: 550;">PAST ORDERS<p> 
-    </div>
-</div>
+
+    <div id="footer"> </div>
 
 </body>
+
 </html>
+<script type="module" src="../scripts/module.js"></script>
+<script type="module" src="../scripts/foter.js"></script>
+<script src="../scripts/readmore.js"></script>
+<script>
+    /* sticky header */
+
+let myScrollFunc = function () {
+    myID = document.getElementById("navbar");
+    var y = window.scrollY;
+    if (y >= 10) {
+        myID.className = "show"
+    } else {
+        myID.className = "hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+
+let c=JSON.parse(localStorage.getItem("cart"))|| [];
+console.log(c.length)
+
+document.getElementById("totalItems").innerText=c.length;
+
+let totalPrice=0;
+c.forEach(element => {
+    totalPrice+= +element.price;
+});
+
+document.getElementById("totalPrice").innerText=totalPrice;
+
+
+paynow=()=>{
+    location.href="../Checkout/checkout.html";
+}
+
+</script>

@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Online Grocery Shopping and Online Supermarket in India-bigbasket</title>
+    <link rel="shortcut icon" href="https://www.bbassets.com/static/v2566/custPage/build/content/img/bb-icon.png"
+    type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=PT+Sans&family=Poppins&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
        
       #navbar{
@@ -289,6 +294,22 @@
         padding: 5px 20px;
         font-size: 15px;
       }
+      .gray{
+        color: gray;
+      }
+      .green{
+        color: #6e9f24;
+        font-size: 17px
+      }
+      #finalBtn{
+        background-color: #6e9f24;
+        color: white;
+        padding: 15px 25px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+      }
     </style>
 </head>
 <body>
@@ -376,7 +397,7 @@
                <div>OFFICE</div>
                <div>OTHER</div>
             </div>
-          <button>ADD ADDRESS</button>
+          <button onclick="addAddress()">ADD ADDRESS</button>
           
         </div>
         
@@ -431,231 +452,52 @@
         <img src="../Checkout/Checkout images/deliver.jpg" alt="">
         <div>Delivery Options</div>
         </div>
+        <p>Default Delivery Options <span id="totalI" class="gray"></span> Shipment , Delivery Charge : <span class="green">Free</span></p>
+
     </div>
     <div id="payOpt">
       <div>
         <img src="../Checkout/Checkout images/pay.jpg" alt="">
         <div>Payment Options</div>
         </div>
+        <button id="finalBtn" onclick="pay()">Proceed To Pay</button>
     </div>
     </div>
 </body>
 </html>
 <script>
+let cartArr=JSON.parse(localStorage.getItem("homedata"))||[];
+
+document.getElementById("totalI").innerText=cartArr.length;
+let totalP=0;
+cartArr.forEach((el)=>{
+    totalP+=Number(el.price)
+})
+
+    document.getElementById("cost").innerText="Rs"+totalP;
+    document.getElementById("totalcost").innerText="Rs"+totalP;
   
-     var fruits_vegArr = [
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Onion",
-      kg: "1kg",
-      price: "60",
-      mrp: 38.38,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Ladies Finger",
-      kg: "500g",
-      price: "23.19",
-      mrp: 19,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "CauliFlower",
-      kg: "1 pc (approx. 400 to 600 g)",
-      price: "23.19",
-      mrp: 19,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000283_11-fresho-green-peas.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Green Peas",
-      kg: "500g",
-      price: "42.50",
-      mrp: 34,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/40057966_2-fresho-tender-coconut-medium.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Tender Coconut - Medium",
-      kg: "1pc",
-      price: "38.75",
-      mrp: 31,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000103_16-fresho-cucumber.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Cucumber",
-      kg: "500g",
-      price: "17.15",
-      mrp: 14,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/40048457_7-fresho-potato-new-crop.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Potato - New Crop",
-      kg: "1kg",
-      price: "33.75",
-      mrp: 27,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Capsicum - Green",
-      kg: "500g",
-      price: "52.50",
-      mrp: 42,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000263_11-fresho-strawberry.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Strawberry",
-      kg: "200g",
-      price: "60",
-      mrp: 48,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/40134281_11-fresho-baby-apple-shimla.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Baby Apple Shimla",
-      kg: "1 kg (Approx. 11-12 pcs)",
-      price: "215",
-      mrp: 172,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000066_25-fresho-cabbage.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Cabbage",
-      kg: "1 pc (approx. 500 g to 800 g)",
-      price: "17.50",
-      mrp: 12.12,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000127_17-fresho-lemon.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Lemon",
-      kg: "250g",
-      price: "22.50",
-      mrp: 18,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000269_30-fresho-pomegranate.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Pomegranate",
-      kg: "4 pcs (approx. 800 - 880 g)",
-      price: "281.25",
-      mrp: 161,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/s/10000054_17-fresho-brinjal-bottle-shape.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Brinjal - Bottle Shape",
-      kg: "500g",
-      price: "21.25",
-      mrp: 17,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/mm/40023474_7-fresho-banana-yelakki-organically-grown.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Banana - Yelakki, Organically Grown",
-      kg: "500g",
-      price: "50",
-      mrp: 40,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/mm/40004992_14-fresho-sweet-corn.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Sweet Corn",
-      kg: "2 pc",
-      price: "46",
-      mrp: 36,
-      brand:"Fresho"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/mm/1203204_2-bb-combo-gajar-halwa.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Gajar Halwa",
-      kg: "Combo 2 Items",
-      price: "154",
-      mrp: 128.55,
-      brand:"bb Combo"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/mm/1202745_1-bb-combo-pineapple-and-pomegranate-cut.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Pineapple and Pomegranate Cut",
-      kg: "Combo 2 Items",
-      price: "237.50",
-      mrp: 182,
-      brand:"bb Combo"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/mm/1203204_2-bb-combo-gajar-halwa.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Gajar Halwa",
-      kg: "Combo 2 Items",
-      price: "154",
-      mrp: 128.55,
-      brand:"bb Combo"
-    },
-    {
-      imageUrl:
-        "https://www.bigbasket.com/media/uploads/p/mm/1202745_1-bb-combo-pineapple-and-pomegranate-cut.jpg",
-      logo: "https://www.bbassets.com/static/v2514/custPage/build/content/img/vegicon.svg",
-      name: "Pineapple and Pomegranate Cut",
-      kg: "Combo 2 Items",
-      price: "237.50",
-      mrp: 182,
-      brand:"bb Combo"
+    pay=()=>{
+      localStorage.setItem("cart",JSON.stringify(cartArr));
+      swal({
+        title: "Successfull!!",
+        text: "Payment Successfull!!",
+        icon: "success",
+        button: "Done",
+      }).then(function (){
+        location.href = "../MY_BASKET/My_orders.html";
+      });
+      localStorage.setItem("homedata",JSON.stringify([]));
     }
 
-];
-  localStorage.setItem("items",JSON.stringify(fruits_vegArr));
-  findTotal(fruits_vegArr)
-  function findTotal(data)
-  {
-    let sum=0;
-    data.forEach((ele)=>{
-      sum+=Number(ele.price);
-    })
-    document.getElementById("cost").innerText="Rs"+sum;
-    document.getElementById("totalcost").innerText="Rs"+sum;
-  }
-  
+    addAddress=()=>{
+      swal({
+        title: "Successfull!!",
+        text: "Address Added Successfully!!",
+        icon: "success",
+        button: "Done",
+      }).then(function (){
+        window.location.reload();
+      });
+    }
 </script>

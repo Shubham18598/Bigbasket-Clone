@@ -1,4 +1,4 @@
-import navbar from "../components/navbar.js";
+import navbar from "../component/navbar.js"
 
 document.getElementById("navigation").innerHTML=navbar();
 
@@ -96,3 +96,20 @@ cities.forEach((el)=>{
     option.setAttribute("value",el.city);
     select.append(option);
 })
+
+let userName=sessionStorage.getItem("username") || "";
+
+if(userName=="" || userName==null || userName==undefined){
+  document.getElementById("beforeLogin").style.display="block";
+  document.getElementById("afterLogin").style.display="none";
+}else{
+  document.getElementById("beforeLogin").style.display="none";
+  document.getElementById("afterLogin").style.display="block";
+  document.getElementById("userName").innerText=userName;
+}
+
+let itemsCount=JSON.parse(localStorage.getItem("homedata"))|| [];
+
+document.getElementById("itemsCount").innerText=`${itemsCount.length} items`;
+
+document.getElementById("itemsCountForBasket").innerText=`${itemsCount.length} items`;

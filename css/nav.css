@@ -413,4 +413,7 @@ p{
     border-radius: 10px;
     text-align: center;
 }
-
+.sub1>p>a,.sub2>p>a,.sub3>p>a,.sub4>p>a,.sub5>p>a,.sub6>p>a,.sub7>p>a,.sub8>p>a,.sub9>p>a,.sub10>p>a,.sub11>p>a{
+    text-decoration: none;
+    color:rgb(99, 99, 99) ;
+}

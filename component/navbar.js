@@ -454,7 +454,7 @@ let navbar=()=>{
                                     <div id="menu">
                                         <div id="menu1">
                                             <div class="sub1">
-                                                <p id="fruits" class="sub-menu1">Fruits & Vegetables</p>
+                                                <p id="fruits" class="sub-menu1"><a href="../productPage/fruits_Vegetables.html">Fruits & Vegetables</a></p>
                                             </div>
                                             <div class="sub12">
                                                 <div class="fruits">
@@ -488,7 +488,7 @@ let navbar=()=>{
                                         </div>
                                         <div id="menu1">
                                             <div class="sub2">
-                                                <p class="sub-menu1 oil">Foodgrains, Oil & Masala</p>
+                                                <p class="sub-menu1 oil"><a href="../productPage/FoodGrains_Oil.html">Foodgrains, Oil & Masala</a></p>
                                             </div>
                                             <div class="sub22">
                                                 <div id="oil">
@@ -517,7 +517,7 @@ let navbar=()=>{
                                         </div>
                                         <div id="menu1">
                                             <div class="sub3">
-                                                <p class="sub-menu1 bakery">Bakery, Cakes & Dairy</p>
+                                                <p class="sub-menu1 bakery"><a href="../productPage/backery_cakes.html">Bakery, Cakes & Dairy</a></p>
                                             </div>
                                             <div class="sub32">
                                                 <div id="bakery">
@@ -719,7 +719,7 @@ let navbar=()=>{
                                         </div>
                                         <div id="menu1">
                                             <div class="sub9">
-                                                <p class="sub-menu1 egg">Eggs, Meat & Fish</p>
+                                                <p class="sub-menu1 egg"><a href="../productPage/Eggs_meat.html">Eggs, Meat & Fish</a></p>
                                             </div>
                                             <div class="sub92">
                                                 <div id="egg">

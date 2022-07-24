@@ -1,4 +1,4 @@
-let cartArr=JSON.parse(localStorage.getItem("homedata"))||[];
+let cartArr=JSON.parse(localStorage.getItem("cartItems"))||[];
     
 let totalPrice=0;
 let count = 1;
@@ -198,7 +198,7 @@ let recoArr = [
 //  document.getElementById("Empty-button").addEventListener("click",emptyBasket);
 
  emptyBasket= () =>{
-  localStorage.setItem("homedata",JSON.stringify([]));
+  localStorage.setItem("cartItems",JSON.stringify([]));
   swal({
     title: "Your Basket Become Empty!!",
     text: "Removed All Your Products From Basket!!",

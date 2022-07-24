@@ -559,7 +559,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
 <script>
-let cartArr=JSON.parse(localStorage.getItem("homedata"))||[];
+let cartArr=JSON.parse(localStorage.getItem("cartItems"))||[];
 
 document.getElementById("totalI").innerText=cartArr.length;
 let totalP=0;

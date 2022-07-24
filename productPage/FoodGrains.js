@@ -375,7 +375,9 @@ let foodGrainsDB = [
         text: "Added To Cart",
         icon: "success",
         button: "Continue",
-    })
+    }).then(function (){
+      window.location.reload();
+    });
   
     }
   

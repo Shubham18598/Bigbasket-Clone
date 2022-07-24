@@ -108,7 +108,7 @@ if(userName=="" || userName==null || userName==undefined){
   document.getElementById("userName").innerText=userName;
 }
 
-let itemsCount=JSON.parse(localStorage.getItem("homedata"))|| [];
+let itemsCount=JSON.parse(localStorage.getItem("cartItems"))|| [];
 
 document.getElementById("itemsCount").innerText=`${itemsCount.length} items`;
 

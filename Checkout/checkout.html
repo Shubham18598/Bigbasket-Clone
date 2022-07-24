@@ -166,6 +166,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         height: 25px;
         margin-top: -10px;
         border:1px solid #C8C8C8;
+        
       }
       #bag1>div:last-child{
         width: 49%;
@@ -253,16 +254,19 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         border: none;
         margin-bottom: 20px;
       }
-      #gift,#deliveryOpt,#payOpt{
+       .bottom{
         border: 1px solid #979797;
         width: 68.8%;
         margin-bottom: 10px;
-        height: 40px;
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
         color: #C8C8C8;
-        padding: 15px;
+        padding: 25px 15px;
+      }
+      #gift{
+        padding: 35px 15px;
       }
       #gift>div{
         display: flex;
@@ -310,6 +314,93 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         border-radius: 5px;
         font-size: 17px;
       }
+      #payCard{
+         
+         border: 1px solid #979797;
+         width: 68.8%;
+         margin-top: -10px;
+         padding: 10px 15px;
+         border-top: none;
+      }
+      #mainPay{
+        /* border: 1px solid #979797; */
+        width: 100%;
+        display: flex;
+      }
+      #side{
+        /* border: 1px solid red; */
+        width: 20%;
+        
+      }
+      #submain{
+        border: 1px solid grey;
+        padding: 10px 20px;
+        width: 100%;
+        background-color: #F7F7F7;
+      }
+      #side>div{
+        /* border: 1px solid teal; */
+        padding: 20px;
+      }
+      #side>div:first-child{
+        padding: 21px;
+      }
+      #side>div:last-child{
+        padding: 12px;
+      }
+      #side6{
+        height: 130px;
+      }
+      #payFill{
+        /* border: 1px solid teal; */
+        width: 92%;
+        padding: 25px;
+      }
+      #payFill>h2{
+        display: inline-block;
+        margin-left: 10px;
+      }
+      #payFill>p,input{
+        margin-left: 40px;
+      }
+      #payFill>input{
+        height: 25px;
+        border: none;
+        border-bottom:1px solid #6e9f24;
+      }
+      #payFill>#cardNo{
+        width: 70%;
+        
+      }
+      #payFill>p{
+        font-family: sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      #b1{
+        display: block;
+        margin-top: 25px;
+        padding: 10px 50px;
+        background-color: #6e9f24;
+        color: white;
+        font-size: 20px;
+        border: none;
+        margin-left: 40px;
+      }
+      .box{
+        padding: 30px;
+        border: 1px solid grey;
+        margin-bottom: 10px;
+        background-color: white;
+      }
+      .boxi{
+        padding: 30px;
+        border: 1px solid grey;
+        margin-bottom: 10px;
+        background-color: white;
+        display: flex;
+      }
+     
     </style>
 </head>
 <body>
@@ -438,7 +529,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </div>
     
     </div>
-    <div id="gift"> 
+    <div id="gift" class="bottom"> 
       <div>
       <img src="../Checkout/Checkout images/gift.jpg" alt="">
       <div>Is this a gift order?</div>
@@ -447,7 +538,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         ADD MESSAGE
       </div>
     </div>
-    <div id="deliveryOpt">
+    <div id="deliveryOpt" class="bottom">
       <div>
         <img src="../Checkout/Checkout images/deliver.jpg" alt="">
         <div>Delivery Options</div>
@@ -455,13 +546,15 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <p>Default Delivery Options <span id="totalI" class="gray"></span> Shipment , Delivery Charge : <span class="green">Free</span></p>
 
     </div>
-    <div id="payOpt">
+    <div id="payOpt" class="bottom">
       <div>
         <img src="../Checkout/Checkout images/pay.jpg" alt="">
         <div>Payment Options</div>
         </div>
         <button id="finalBtn" onclick="pay()">Proceed To Pay</button>
+        
     </div>
+    <div id="payCard"></div>
     </div>
 </body>
 </html>
@@ -487,7 +580,9 @@ cartArr.forEach((el)=>{
       }).then(function (){
         location.href = "../MY_BASKET/My_orders.html";
       });
-      localStorage.setItem("cartItems",JSON.stringify([]));
+      localStorage.setItem("homedata",JSON.stringify([]));
+      sideappend();
+       append1();
     }
 
     addAddress=()=>{
@@ -500,4 +595,247 @@ cartArr.forEach((el)=>{
         window.location.reload();
       });
     }
+    
+    let mainPay=document.createElement("div");
+       mainPay.setAttribute("id","mainPay")
+       let side=document.createElement("div");
+       side.setAttribute("id","side");
+       side.style.backgroundColor="white";
+       let submain=document.createElement("div");
+       submain.setAttribute("id","submain");
+
+    let in_sub_main=document.createElement("div");
+       in_sub_main.setAttribute("id","payFill");
+        
+    function sideappend()
+    {
+       
+
+       let side1=document.createElement("div");
+       let side2=document.createElement("div");
+       let side3=document.createElement("div");
+       let side4=document.createElement("div");
+       let side5=document.createElement("div");
+       let side6=document.createElement("div");
+
+       side1.innerText="Credit/Debit Card";
+       side2.innerText="Net Banking";
+       side2.addEventListener("click",showPayOpt)
+       side3.innerText="UPI";
+       side3.addEventListener("click",showPayOpt)
+       side4.innerText="Wallet";
+       side5.innerText="Cash/Card on delivery";
+       side6.innerText="";
+       side6.setAttribute("id","side6")
+       side.append(side1,side2,side3,side4,side5,side6);
+       side1.style.backgroundColor="#F7F7F7";
+       mainPay.append(side);
+       document.getElementById("payCard").append(mainPay);
+       
+       
+    } 
+       function append1(){
+       let mark=document.createElement("img");
+       mark.src="../Checkout/Checkout images/mark.jpg";
+       let h2=document.createElement("h2");
+       h2.innerText="Add Credit/Debit card";
+       let p1=document.createElement("p");
+       
+       p1.innerText="Card Number";
+       let i1=document.createElement("input");
+       i1.setAttribute("id","cardNo")
+       i1.setAttribute("placeholder","Enter card number");
+       let p2=document.createElement("p");
+       p2.innerText="Valid Thru";
+       let i2=document.createElement("input");
+       i2.setAttribute("placeholder","MM/YY");
+       let p3=document.createElement("p");
+       p3.innerText="CVV";
+       let i3=document.createElement("input");
+       i3.setAttribute("placeholder","Security code");
+       let b1=document.createElement("button");
+       b1.innerText="Place order & Pay"
+       b1.setAttribute("id","b1")
+       in_sub_main.style.backgroundColor="white";
+       in_sub_main.append(mark,h2,p1,i1,p2,i2,p3,i3,b1)
+       submain.append(in_sub_main);
+       mainPay.append(submain);
+       document.getElementById("payCard").append(mainPay)
+       
+    }
+    sideappend()
+    append1()
+   function append2(){
+       let h4=document.createElement("h4");
+       h4.innerText="Frequently Used Banks";
+       h4.style.marginTop="-20px";
+       let div1=document.createElement("div");
+       div1.setAttribute("class","boxi");
+       let div2=document.createElement("div");
+       div2.setAttribute("class","boxi");
+       let div3=document.createElement("div");
+       div3.setAttribute("class","boxi");
+
+       let in1=document.createElement("input");
+       in1.setAttribute("type","radio");
+       in1.setAttribute("name","bank");
+       
+       let in2=document.createElement("input");
+       in2.setAttribute("type","radio");
+       in2.setAttribute("name","bank");
+       
+       let in3=document.createElement("input");
+       in3.setAttribute("type","radio");
+       in3.setAttribute("name","bank");
+       
+      
+
+       let p1=document.createElement("p");
+       p1.innerText="HDFC bank"
+       let p2=document.createElement("p");
+       p2.innerText="ICICI Netbanking"
+       let p3=document.createElement("p");
+       p3.innerText="State Bank  of India";
+
+       div1.append(in1,p1);
+       div2.append(in2,p2);
+       div3.append(in3,p3);
+       in_sub_main.append(h4,div1,div2,div3);
+       submain.append(in_sub_main);
+       mainPay.append(submain);
+       document.getElementById("payCard").append(mainPay);
+       
+   }
+  //  sideappend()
+  //  append2()
+
+   function append3(){
+       let mark=document.createElement("img");
+       mark.src="../Checkout/Checkout images/mark.jpg";
+       let h2=document.createElement("h2");
+       h2.innerText="Add new UPI ID";
+       let p1=document.createElement("p");
+       
+       p1.innerText="UPI ID";
+       let i1=document.createElement("input");
+       i1.setAttribute("id","cardNo")
+       i1.setAttribute("placeholder","user@bankname");
+       let p2=document.createElement("p");
+       p2.innerText="A payment request will be sent to this UPI ID";
+       
+       let b1=document.createElement("button");
+       b1.innerText="Verify"
+       b1.setAttribute("id","b1")
+       in_sub_main.style.backgroundColor="white";
+       in_sub_main.append(mark,h2,p1,i1,p2,b1)
+       submain.append(in_sub_main);
+       mainPay.append(submain);
+       document.getElementById("payCard").append(mainPay)
+       
+    }
+    // sideappend()
+    // append3()
+
+    function append4(){
+      let div1=document.createElement("div");
+      div1.setAttribute("class","boxi")
+      let div2=document.createElement("div");
+      div2.setAttribute("class","boxi")
+      let div3=document.createElement("div");
+      div3.setAttribute("class","boxi")
+      let div4=document.createElement("div");
+      div4.setAttribute("class","boxi")
+      let div5=document.createElement("div");
+      div5.setAttribute("class","boxi")
+      let div6=document.createElement("div");
+      div6.setAttribute("class","boxi")
+
+       let in1=document.createElement("input");
+       in1.setAttribute("type","radio");
+       in1.setAttribute("name","bank");
+       let in2=document.createElement("input");
+       in2.setAttribute("type","radio");
+       in2.setAttribute("name","bank");
+       let in3=document.createElement("input");
+       in3.setAttribute("type","radio");
+       in3.setAttribute("name","bank");
+       let in4=document.createElement("input");
+       in4.setAttribute("type","radio");
+       in4.setAttribute("name","bank");
+       let in5=document.createElement("input");
+       in5.setAttribute("type","radio");
+       in5.setAttribute("name","bank");
+       let in6=document.createElement("input");
+       in6.setAttribute("type","radio");
+       in6.setAttribute("name","bank");
+
+       let p1=document.createElement("p");
+       p1.innerText="Ola money"
+       let p2=document.createElement("p");
+       p2.innerText="Airtel money"
+       let p3=document.createElement("p");
+       p3.innerText="Freecharge";
+       let p4=document.createElement("p");
+       p4.innerText="Mobikwik"
+       let p5=document.createElement("p");
+       p5.innerText="Paytm"
+       let p6=document.createElement("p");
+       p6.innerText="Payzapp";
+
+       div1.append(in1,p1);
+       div2.append(in2,p2);
+       div3.append(in3,p3);
+       div4.append(in4,p4);
+       div5.append(in5,p5);
+       div6.append(in6,p6);
+       
+       in_sub_main.append(div1,div2,div3,div4,div5,div6);
+      
+       submain.append(in_sub_main);
+       mainPay.append(submain);
+       document.getElementById("payCard").append(mainPay)
+    }
+    //sideappend();
+    //append4()
+
+    function append5(){
+       let div1=document.createElement("div");
+       div1.setAttribute("class","boxi")
+       let div2=document.createElement("div");
+       div2.setAttribute("class","boxi")
+
+       let in1=document.createElement("input");
+       in1.setAttribute("type","radio");
+       in1.setAttribute("name","bank");
+       let in2=document.createElement("input");
+       in2.setAttribute("type","radio");
+       in2.setAttribute("name","bank");
+
+       let p1=document.createElement("p");
+       p1.innerText="Cash on delivery";
+       let p2=document.createElement("p");
+       p2.innerText="Card on delivery";
+
+       div1.append(in1,p1);
+       div2.append(in2,p2);
+
+       in_sub_main.append(div1,div2);
+       submain.append(in_sub_main);
+       mainPay.append(submain);
+       document.getElementById("payCard").append(mainPay)
+    }
+    // sideappend();
+    // append5()
+    function showPayOpt(id)
+    {
+        if(id=="side2")
+        {
+          console.log("hi")
+        }
+        else 
+        {
+          console.log("hello")
+        }
+    }
+   
 </script>

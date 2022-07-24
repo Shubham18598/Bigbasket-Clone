@@ -166,7 +166,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         height: 25px;
         margin-top: -10px;
         border:1px solid #C8C8C8;
-        
+        margin-left: 0px ;
       }
       #bag1>div:last-child{
         width: 49%;
@@ -189,6 +189,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         height: 25px;
         margin-top: -10px;
         border:1px solid #C8C8C8;
+        margin-left: 0px ;
+
       }
       #bag2>div:last-child>input{
          width: 98.7%;
@@ -204,6 +206,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         height: 25px;
         width: 98%;
         border:1px solid #C8C8C8;
+        margin-left: 0px ;
+
       }
       #bag4>div>select{
         height: 31px;
@@ -225,6 +229,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         height: 25px;
         margin-top: -10px;
         border:1px solid #C8C8C8;
+        margin-left: 0px ;
+
       }
       #bag4>div:nth-child(3)>input
       {
@@ -232,6 +238,8 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         height: 25px;
         margin-top: -10px;
         border:1px solid #C8C8C8;
+        margin-left: 0px ;
+
       }
       #bag5>div{
         display: flex;
@@ -571,16 +579,16 @@ cartArr.forEach((el)=>{
     document.getElementById("totalcost").innerText="Rs"+totalP;
   
     pay=()=>{
-      localStorage.setItem("cart",JSON.stringify(cartArr));
-      swal({
-        title: "Successfull!!",
-        text: "Payment Successfull!!",
-        icon: "success",
-        button: "Done",
-      }).then(function (){
-        location.href = "../MY_BASKET/My_orders.html";
-      });
-      localStorage.setItem("homedata",JSON.stringify([]));
+      // localStorage.setItem("cart",JSON.stringify(cartArr));
+      // swal({
+      //   title: "Successfull!!",
+      //   text: "Payment Successfull!!",
+      //   icon: "success",
+      //   button: "Done",
+      // }).then(function (){
+      //   location.href = "../MY_BASKET/My_orders.html";
+      // });
+      // localStorage.setItem("homedata",JSON.stringify([]));
       sideappend();
        append1();
     }
@@ -655,7 +663,10 @@ cartArr.forEach((el)=>{
        i3.setAttribute("placeholder","Security code");
        let b1=document.createElement("button");
        b1.innerText="Place order & Pay"
-       b1.setAttribute("id","b1")
+       b1.setAttribute("id","b1");
+       b1.addEventListener("click",function(){
+        payfunction()
+       })
        in_sub_main.style.backgroundColor="white";
        in_sub_main.append(mark,h2,p1,i1,p2,i2,p3,i3,b1)
        submain.append(in_sub_main);
@@ -663,8 +674,20 @@ cartArr.forEach((el)=>{
        document.getElementById("payCard").append(mainPay)
        
     }
-    sideappend()
-    append1()
+    payfunction=()=>{
+      localStorage.setItem("cart",JSON.stringify(cartArr));
+      swal({
+        title: "Payment Successfull!!",
+        text: "Your Order Has Been Placed Successfully. Thank You For Shopping!! ",
+        icon: "success",
+        button: "Done",
+      }).then(function (){
+        location.href = "../index.html";
+      });
+      localStorage.setItem("homedata",JSON.stringify([]));
+    }
+    // sideappend()
+    // append1()
    function append2(){
        let h4=document.createElement("h4");
        h4.innerText="Frequently Used Banks";
